@@ -1,0 +1,331 @@
+==================== Dataset Info ==================== 
+train images: (5994, 3) 
+valid images: (5794, 3) 
+num classes: 200 
+==================== info ==================== 
+model: resnet 
+
+*** downstream imformation *** 
+batch size: 32 
+epoch: 128 
+learning rate: 0.01 
+scheduler: cos 
+input resolution: 224 
+pretrain with imagenet: False 
+Load pretext model from ./record/weight/05251729/resnet_pretext.pth 
+
+*** record *** 
+downstream model save at  ./record/weight/05261448/resnet_downstream.pth 
+log write at  ./record/log/05261448.txt 
+cuda will be used in the training process !!! 
+==================== pretext ==================== 
+Load pretext model. 
+Successfully load backbone model from ./record/weight/05251729/resnet_pretext.pth 
+==================== downstream ==================== 
+no downstream model in ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:49:00- epoch: 1/128 - train loss: 5.111 - train acc: 0.018 - valid loss: 5.199 - valid acc: 0.0171  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:49:30- epoch: 2/128 - train loss: 4.802 - train acc: 0.023 - valid loss: 4.877 - valid acc: 0.0255  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:50:01- epoch: 3/128 - train loss: 4.605 - train acc: 0.032 - valid loss: 4.761 - valid acc: 0.0305  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:50:32- epoch: 4/128 - train loss: 4.417 - train acc: 0.046 - valid loss: 4.497 - valid acc: 0.0442  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:51:01- epoch: 5/128 - train loss: 4.266 - train acc: 0.057 - valid loss: 4.205 - valid acc: 0.0613  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:51:31- epoch: 6/128 - train loss: 4.110 - train acc: 0.068 - valid loss: 4.050 - valid acc: 0.0754  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:52:02- epoch: 7/128 - train loss: 3.989 - train acc: 0.086 - valid loss: 4.794 - valid acc: 0.0495  
+current lr: 0.010000 
+2022-05-26 14:52:31- epoch: 8/128 - train loss: 3.853 - train acc: 0.102 - valid loss: 3.889 - valid acc: 0.0944  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:53:00- epoch: 9/128 - train loss: 3.702 - train acc: 0.112 - valid loss: 3.935 - valid acc: 0.1048  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:53:32- epoch: 10/128 - train loss: 3.597 - train acc: 0.135 - valid loss: 3.719 - valid acc: 0.1162  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:54:02- epoch: 11/128 - train loss: 3.426 - train acc: 0.164 - valid loss: 3.444 - valid acc: 0.1591  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.010000 
+2022-05-26 14:54:33- epoch: 12/128 - train loss: 3.329 - train acc: 0.175 - valid loss: 3.518 - valid acc: 0.1543  
+current lr: 0.009994 
+2022-05-26 14:55:03- epoch: 13/128 - train loss: 3.213 - train acc: 0.191 - valid loss: 3.303 - valid acc: 0.1747  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009986 
+2022-05-26 14:55:33- epoch: 14/128 - train loss: 3.077 - train acc: 0.226 - valid loss: 3.663 - valid acc: 0.1557  
+current lr: 0.009976 
+2022-05-26 14:56:02- epoch: 15/128 - train loss: 2.984 - train acc: 0.241 - valid loss: 3.118 - valid acc: 0.2287  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009962 
+2022-05-26 14:56:33- epoch: 16/128 - train loss: 2.867 - train acc: 0.261 - valid loss: 3.006 - valid acc: 0.2463  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009946 
+2022-05-26 14:57:04- epoch: 17/128 - train loss: 2.780 - train acc: 0.281 - valid loss: 3.470 - valid acc: 0.1892  
+current lr: 0.009926 
+2022-05-26 14:57:34- epoch: 18/128 - train loss: 2.724 - train acc: 0.301 - valid loss: 2.995 - valid acc: 0.2437  
+current lr: 0.009904 
+2022-05-26 14:58:03- epoch: 19/128 - train loss: 2.615 - train acc: 0.309 - valid loss: 2.679 - valid acc: 0.3020  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009879 
+2022-05-26 14:58:33- epoch: 20/128 - train loss: 2.505 - train acc: 0.331 - valid loss: 2.945 - valid acc: 0.2587  
+current lr: 0.009850 
+2022-05-26 14:59:03- epoch: 21/128 - train loss: 2.418 - train acc: 0.353 - valid loss: 2.605 - valid acc: 0.3265  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009819 
+2022-05-26 14:59:33- epoch: 22/128 - train loss: 2.305 - train acc: 0.381 - valid loss: 2.763 - valid acc: 0.2853  
+current lr: 0.009785 
+2022-05-26 15:00:04- epoch: 23/128 - train loss: 2.234 - train acc: 0.397 - valid loss: 2.645 - valid acc: 0.3253  
+current lr: 0.009748 
+2022-05-26 15:00:33- epoch: 24/128 - train loss: 2.161 - train acc: 0.408 - valid loss: 2.730 - valid acc: 0.3248  
+current lr: 0.009708 
+2022-05-26 15:01:04- epoch: 25/128 - train loss: 2.081 - train acc: 0.435 - valid loss: 2.614 - valid acc: 0.3260  
+current lr: 0.009665 
+2022-05-26 15:01:32- epoch: 26/128 - train loss: 2.032 - train acc: 0.438 - valid loss: 2.500 - valid acc: 0.3548  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009619 
+2022-05-26 15:02:02- epoch: 27/128 - train loss: 1.943 - train acc: 0.470 - valid loss: 2.448 - valid acc: 0.3673  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009571 
+2022-05-26 15:02:32- epoch: 28/128 - train loss: 1.868 - train acc: 0.483 - valid loss: 2.378 - valid acc: 0.3819  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009520 
+2022-05-26 15:03:02- epoch: 29/128 - train loss: 1.766 - train acc: 0.510 - valid loss: 2.333 - valid acc: 0.4040  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009466 
+2022-05-26 15:03:34- epoch: 30/128 - train loss: 1.702 - train acc: 0.519 - valid loss: 2.208 - valid acc: 0.4268  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.009410 
+2022-05-26 15:04:04- epoch: 31/128 - train loss: 1.636 - train acc: 0.536 - valid loss: 2.233 - valid acc: 0.4184  
+current lr: 0.009350 
+2022-05-26 15:04:34- epoch: 32/128 - train loss: 1.589 - train acc: 0.550 - valid loss: 2.262 - valid acc: 0.4087  
+current lr: 0.009289 
+2022-05-26 15:05:03- epoch: 33/128 - train loss: 1.534 - train acc: 0.570 - valid loss: 2.481 - valid acc: 0.3868  
+current lr: 0.009224 
+2022-05-26 15:05:34- epoch: 34/128 - train loss: 1.474 - train acc: 0.580 - valid loss: 2.505 - valid acc: 0.3933  
+current lr: 0.009157 
+2022-05-26 15:06:05- epoch: 35/128 - train loss: 1.419 - train acc: 0.592 - valid loss: 2.318 - valid acc: 0.4134  
+current lr: 0.009088 
+2022-05-26 15:06:35- epoch: 36/128 - train loss: 1.363 - train acc: 0.606 - valid loss: 2.506 - valid acc: 0.4061  
+current lr: 0.009016 
+2022-05-26 15:07:05- epoch: 37/128 - train loss: 1.341 - train acc: 0.617 - valid loss: 2.022 - valid acc: 0.4808  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.008942 
+2022-05-26 15:07:36- epoch: 38/128 - train loss: 1.247 - train acc: 0.638 - valid loss: 2.102 - valid acc: 0.4791  
+current lr: 0.008865 
+2022-05-26 15:08:06- epoch: 39/128 - train loss: 1.237 - train acc: 0.641 - valid loss: 2.180 - valid acc: 0.4520  
+current lr: 0.008786 
+2022-05-26 15:08:36- epoch: 40/128 - train loss: 1.190 - train acc: 0.650 - valid loss: 2.180 - valid acc: 0.4565  
+current lr: 0.008705 
+2022-05-26 15:09:05- epoch: 41/128 - train loss: 1.158 - train acc: 0.659 - valid loss: 2.101 - valid acc: 0.4765  
+current lr: 0.008621 
+2022-05-26 15:09:34- epoch: 42/128 - train loss: 1.098 - train acc: 0.672 - valid loss: 1.963 - valid acc: 0.4931  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.008536 
+2022-05-26 15:10:04- epoch: 43/128 - train loss: 1.013 - train acc: 0.701 - valid loss: 1.900 - valid acc: 0.5261  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.008448 
+2022-05-26 15:10:35- epoch: 44/128 - train loss: 0.992 - train acc: 0.707 - valid loss: 2.114 - valid acc: 0.4732  
+current lr: 0.008358 
+2022-05-26 15:11:06- epoch: 45/128 - train loss: 0.950 - train acc: 0.721 - valid loss: 2.260 - valid acc: 0.4496  
+current lr: 0.008266 
+2022-05-26 15:11:36- epoch: 46/128 - train loss: 0.940 - train acc: 0.724 - valid loss: 1.935 - valid acc: 0.5200  
+current lr: 0.008172 
+2022-05-26 15:12:07- epoch: 47/128 - train loss: 0.892 - train acc: 0.735 - valid loss: 1.855 - valid acc: 0.5274  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.008076 
+2022-05-26 15:12:35- epoch: 48/128 - train loss: 0.848 - train acc: 0.747 - valid loss: 1.981 - valid acc: 0.5179  
+current lr: 0.007978 
+2022-05-26 15:13:04- epoch: 49/128 - train loss: 0.806 - train acc: 0.759 - valid loss: 1.884 - valid acc: 0.5266  
+current lr: 0.007879 
+2022-05-26 15:13:34- epoch: 50/128 - train loss: 0.782 - train acc: 0.771 - valid loss: 2.028 - valid acc: 0.5124  
+current lr: 0.007778 
+2022-05-26 15:14:06- epoch: 51/128 - train loss: 0.763 - train acc: 0.777 - valid loss: 2.011 - valid acc: 0.5159  
+current lr: 0.007675 
+2022-05-26 15:14:35- epoch: 52/128 - train loss: 0.730 - train acc: 0.789 - valid loss: 1.952 - valid acc: 0.5211  
+current lr: 0.007571 
+2022-05-26 15:15:05- epoch: 53/128 - train loss: 0.678 - train acc: 0.801 - valid loss: 1.953 - valid acc: 0.5369  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.007464 
+2022-05-26 15:15:35- epoch: 54/128 - train loss: 0.653 - train acc: 0.808 - valid loss: 1.962 - valid acc: 0.5162  
+current lr: 0.007357 
+2022-05-26 15:16:05- epoch: 55/128 - train loss: 0.610 - train acc: 0.824 - valid loss: 1.862 - valid acc: 0.5513  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.007248 
+2022-05-26 15:16:34- epoch: 56/128 - train loss: 0.567 - train acc: 0.833 - valid loss: 1.940 - valid acc: 0.5390  
+current lr: 0.007138 
+2022-05-26 15:17:05- epoch: 57/128 - train loss: 0.558 - train acc: 0.839 - valid loss: 1.871 - valid acc: 0.5564  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.007026 
+2022-05-26 15:17:35- epoch: 58/128 - train loss: 0.512 - train acc: 0.851 - valid loss: 1.958 - valid acc: 0.5324  
+current lr: 0.006913 
+2022-05-26 15:18:05- epoch: 59/128 - train loss: 0.485 - train acc: 0.861 - valid loss: 1.821 - valid acc: 0.5656  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.006799 
+2022-05-26 15:18:34- epoch: 60/128 - train loss: 0.463 - train acc: 0.869 - valid loss: 1.774 - valid acc: 0.5753  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.006684 
+2022-05-26 15:19:04- epoch: 61/128 - train loss: 0.440 - train acc: 0.877 - valid loss: 1.818 - valid acc: 0.5659  
+current lr: 0.006568 
+2022-05-26 15:19:35- epoch: 62/128 - train loss: 0.405 - train acc: 0.889 - valid loss: 1.821 - valid acc: 0.5846  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.006451 
+2022-05-26 15:20:04- epoch: 63/128 - train loss: 0.406 - train acc: 0.882 - valid loss: 1.779 - valid acc: 0.5742  
+current lr: 0.006334 
+2022-05-26 15:20:34- epoch: 64/128 - train loss: 0.398 - train acc: 0.891 - valid loss: 1.892 - valid acc: 0.5614  
+current lr: 0.006215 
+2022-05-26 15:21:05- epoch: 65/128 - train loss: 0.358 - train acc: 0.897 - valid loss: 1.851 - valid acc: 0.5690  
+current lr: 0.006096 
+2022-05-26 15:21:35- epoch: 66/128 - train loss: 0.342 - train acc: 0.913 - valid loss: 1.764 - valid acc: 0.5873  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.005975 
+2022-05-26 15:22:06- epoch: 67/128 - train loss: 0.321 - train acc: 0.911 - valid loss: 1.878 - valid acc: 0.5730  
+current lr: 0.005855 
+2022-05-26 15:22:36- epoch: 68/128 - train loss: 0.294 - train acc: 0.921 - valid loss: 1.754 - valid acc: 0.5942  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.005734 
+2022-05-26 15:23:06- epoch: 69/128 - train loss: 0.285 - train acc: 0.927 - valid loss: 1.824 - valid acc: 0.5860  
+current lr: 0.005612 
+2022-05-26 15:23:36- epoch: 70/128 - train loss: 0.255 - train acc: 0.935 - valid loss: 1.820 - valid acc: 0.5872  
+current lr: 0.005490 
+2022-05-26 15:24:05- epoch: 71/128 - train loss: 0.211 - train acc: 0.952 - valid loss: 1.751 - valid acc: 0.6010  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.005368 
+2022-05-26 15:24:36- epoch: 72/128 - train loss: 0.198 - train acc: 0.955 - valid loss: 1.742 - valid acc: 0.5994  
+current lr: 0.005245 
+2022-05-26 15:25:06- epoch: 73/128 - train loss: 0.185 - train acc: 0.958 - valid loss: 1.764 - valid acc: 0.5989  
+current lr: 0.005123 
+2022-05-26 15:25:37- epoch: 74/128 - train loss: 0.170 - train acc: 0.964 - valid loss: 1.748 - valid acc: 0.6027  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.005000 
+2022-05-26 15:26:07- epoch: 75/128 - train loss: 0.152 - train acc: 0.970 - valid loss: 1.769 - valid acc: 0.6018  
+current lr: 0.004877 
+2022-05-26 15:26:37- epoch: 76/128 - train loss: 0.154 - train acc: 0.969 - valid loss: 1.691 - valid acc: 0.6222  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.004755 
+2022-05-26 15:27:09- epoch: 77/128 - train loss: 0.138 - train acc: 0.973 - valid loss: 1.732 - valid acc: 0.6160  
+current lr: 0.004632 
+2022-05-26 15:27:38- epoch: 78/128 - train loss: 0.139 - train acc: 0.972 - valid loss: 1.742 - valid acc: 0.6151  
+current lr: 0.004510 
+2022-05-26 15:28:09- epoch: 79/128 - train loss: 0.123 - train acc: 0.977 - valid loss: 1.705 - valid acc: 0.6241  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.004388 
+2022-05-26 15:28:40- epoch: 80/128 - train loss: 0.116 - train acc: 0.977 - valid loss: 1.689 - valid acc: 0.6296  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.004266 
+2022-05-26 15:29:10- epoch: 81/128 - train loss: 0.100 - train acc: 0.984 - valid loss: 1.698 - valid acc: 0.6231  
+current lr: 0.004145 
+2022-05-26 15:29:41- epoch: 82/128 - train loss: 0.091 - train acc: 0.985 - valid loss: 1.686 - valid acc: 0.6281  
+current lr: 0.004025 
+2022-05-26 15:30:11- epoch: 83/128 - train loss: 0.095 - train acc: 0.985 - valid loss: 1.657 - valid acc: 0.6326  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.003904 
+2022-05-26 15:30:41- epoch: 84/128 - train loss: 0.091 - train acc: 0.987 - valid loss: 1.682 - valid acc: 0.6279  
+current lr: 0.003785 
+2022-05-26 15:31:12- epoch: 85/128 - train loss: 0.084 - train acc: 0.987 - valid loss: 1.695 - valid acc: 0.6200  
+current lr: 0.003666 
+2022-05-26 15:31:42- epoch: 86/128 - train loss: 0.070 - train acc: 0.990 - valid loss: 1.620 - valid acc: 0.6348  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.003549 
+2022-05-26 15:32:13- epoch: 87/128 - train loss: 0.062 - train acc: 0.993 - valid loss: 1.615 - valid acc: 0.6353  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.003432 
+2022-05-26 15:32:44- epoch: 88/128 - train loss: 0.058 - train acc: 0.992 - valid loss: 1.630 - valid acc: 0.6384  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.003316 
+2022-05-26 15:33:14- epoch: 89/128 - train loss: 0.057 - train acc: 0.994 - valid loss: 1.621 - valid acc: 0.6388  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.003201 
+2022-05-26 15:33:45- epoch: 90/128 - train loss: 0.054 - train acc: 0.994 - valid loss: 1.616 - valid acc: 0.6374  
+current lr: 0.003087 
+2022-05-26 15:34:15- epoch: 91/128 - train loss: 0.058 - train acc: 0.994 - valid loss: 1.606 - valid acc: 0.6414  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.002974 
+2022-05-26 15:34:44- epoch: 92/128 - train loss: 0.048 - train acc: 0.997 - valid loss: 1.593 - valid acc: 0.6446  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.002862 
+2022-05-26 15:35:12- epoch: 93/128 - train loss: 0.047 - train acc: 0.995 - valid loss: 1.598 - valid acc: 0.6452  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.002752 
+2022-05-26 15:35:43- epoch: 94/128 - train loss: 0.049 - train acc: 0.994 - valid loss: 1.597 - valid acc: 0.6493  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.002643 
+2022-05-26 15:36:13- epoch: 95/128 - train loss: 0.040 - train acc: 0.997 - valid loss: 1.579 - valid acc: 0.6436  
+current lr: 0.002536 
+2022-05-26 15:36:44- epoch: 96/128 - train loss: 0.039 - train acc: 0.997 - valid loss: 1.571 - valid acc: 0.6508  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.002429 
+2022-05-26 15:37:14- epoch: 97/128 - train loss: 0.040 - train acc: 0.997 - valid loss: 1.591 - valid acc: 0.6491  
+current lr: 0.002325 
+2022-05-26 15:37:45- epoch: 98/128 - train loss: 0.038 - train acc: 0.997 - valid loss: 1.587 - valid acc: 0.6483  
+current lr: 0.002222 
+2022-05-26 15:38:16- epoch: 99/128 - train loss: 0.035 - train acc: 0.997 - valid loss: 1.573 - valid acc: 0.6527  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.002121 
+2022-05-26 15:38:46- epoch: 100/128 - train loss: 0.040 - train acc: 0.997 - valid loss: 1.568 - valid acc: 0.6496  
+current lr: 0.002022 
+2022-05-26 15:39:16- epoch: 101/128 - train loss: 0.035 - train acc: 0.997 - valid loss: 1.552 - valid acc: 0.6514  
+current lr: 0.001924 
+2022-05-26 15:39:47- epoch: 102/128 - train loss: 0.033 - train acc: 0.998 - valid loss: 1.544 - valid acc: 0.6515  
+current lr: 0.001828 
+2022-05-26 15:40:18- epoch: 103/128 - train loss: 0.034 - train acc: 0.998 - valid loss: 1.570 - valid acc: 0.6500  
+current lr: 0.001734 
+2022-05-26 15:40:48- epoch: 104/128 - train loss: 0.029 - train acc: 0.998 - valid loss: 1.545 - valid acc: 0.6591  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.001642 
+2022-05-26 15:41:18- epoch: 105/128 - train loss: 0.030 - train acc: 0.998 - valid loss: 1.547 - valid acc: 0.6559  
+current lr: 0.001552 
+2022-05-26 15:41:48- epoch: 106/128 - train loss: 0.031 - train acc: 0.999 - valid loss: 1.550 - valid acc: 0.6584  
+current lr: 0.001464 
+2022-05-26 15:42:18- epoch: 107/128 - train loss: 0.029 - train acc: 0.998 - valid loss: 1.546 - valid acc: 0.6548  
+current lr: 0.001379 
+2022-05-26 15:42:49- epoch: 108/128 - train loss: 0.030 - train acc: 0.998 - valid loss: 1.536 - valid acc: 0.6626  
+Best accuracy achieved, saving model to ./record/weight/05261448/resnet_downstream.pth 
+current lr: 0.001295 
+2022-05-26 15:43:18- epoch: 109/128 - train loss: 0.027 - train acc: 0.999 - valid loss: 1.552 - valid acc: 0.6546  
+current lr: 0.001214 
+2022-05-26 15:43:49- epoch: 110/128 - train loss: 0.032 - train acc: 0.998 - valid loss: 1.542 - valid acc: 0.6569  
+current lr: 0.001135 
+2022-05-26 15:44:19- epoch: 111/128 - train loss: 0.028 - train acc: 0.999 - valid loss: 1.523 - valid acc: 0.6586  
+current lr: 0.001058 
+2022-05-26 15:44:50- epoch: 112/128 - train loss: 0.031 - train acc: 0.999 - valid loss: 1.534 - valid acc: 0.6559  
+current lr: 0.000984 
+2022-05-26 15:45:20- epoch: 113/128 - train loss: 0.027 - train acc: 0.998 - valid loss: 1.527 - valid acc: 0.6569  
+current lr: 0.000912 
+2022-05-26 15:45:49- epoch: 114/128 - train loss: 0.028 - train acc: 0.998 - valid loss: 1.536 - valid acc: 0.6543  
+current lr: 0.000843 
+2022-05-26 15:46:18- epoch: 115/128 - train loss: 0.028 - train acc: 0.998 - valid loss: 1.539 - valid acc: 0.6584  
+current lr: 0.000776 
+2022-05-26 15:46:47- epoch: 116/128 - train loss: 0.026 - train acc: 0.999 - valid loss: 1.541 - valid acc: 0.6557  
+current lr: 0.000711 
+2022-05-26 15:47:18- epoch: 117/128 - train loss: 0.025 - train acc: 0.999 - valid loss: 1.540 - valid acc: 0.6605  
+current lr: 0.000650 
+2022-05-26 15:47:48- epoch: 118/128 - train loss: 0.024 - train acc: 0.999 - valid loss: 1.548 - valid acc: 0.6567  
+current lr: 0.000590 
+2022-05-26 15:48:17- epoch: 119/128 - train loss: 0.023 - train acc: 0.999 - valid loss: 1.539 - valid acc: 0.6596  
+current lr: 0.000534 
+2022-05-26 15:48:48- epoch: 120/128 - train loss: 0.027 - train acc: 0.999 - valid loss: 1.546 - valid acc: 0.6555  
+current lr: 0.000480 
+2022-05-26 15:49:20- epoch: 121/128 - train loss: 0.023 - train acc: 0.999 - valid loss: 1.541 - valid acc: 0.6577  
+current lr: 0.000429 
+2022-05-26 15:49:51- epoch: 122/128 - train loss: 0.023 - train acc: 0.999 - valid loss: 1.514 - valid acc: 0.6567  
+current lr: 0.000381 
+2022-05-26 15:50:22- epoch: 123/128 - train loss: 0.025 - train acc: 0.998 - valid loss: 1.531 - valid acc: 0.6571  
+current lr: 0.000335 
+2022-05-26 15:50:51- epoch: 124/128 - train loss: 0.022 - train acc: 1.000 - valid loss: 1.538 - valid acc: 0.6545  
+current lr: 0.000292 
+2022-05-26 15:51:23- epoch: 125/128 - train loss: 0.024 - train acc: 0.999 - valid loss: 1.542 - valid acc: 0.6569  
+current lr: 0.000252 
+2022-05-26 15:51:54- epoch: 126/128 - train loss: 0.023 - train acc: 0.999 - valid loss: 1.542 - valid acc: 0.6576  
+current lr: 0.000215 
+2022-05-26 15:52:25- epoch: 127/128 - train loss: 0.021 - train acc: 0.999 - valid loss: 1.531 - valid acc: 0.6588  
+current lr: 0.000181 
+2022-05-26 15:52:55- epoch: 128/128 - train loss: 0.021 - train acc: 0.999 - valid loss: 1.552 - valid acc: 0.6564  

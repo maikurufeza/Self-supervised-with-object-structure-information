@@ -1,0 +1,1548 @@
+================ Dataset Info ===================== 
+train images: (5994, 3) 
+valid images: (5794, 3) 
+num classes: 200 
+cuda:1 will be used in the training process !!! 
+================ info ===================== 
+model: resnet 
+
+*** Pretext imformation *** 
+batch size: 32 
+epoch: 512 
+with LIO: True 
+M: True 
+mask/coor loss weight: 0.1 0.1 
+LIO mask size: 7 
+attention:  
+learning rate: 0.01 
+scheduler: cos 
+input resolution: 224 
+simclr out dim: 128 
+
+*** downstream imformation *** 
+batch size: 64 
+epoch: 128 
+learning rate: 0.1 
+scheduler: cos 
+input resolution: 224 
+pretrain with imagenet: False 
+
+*** record *** 
+pretext model save at  ./record/weight/05190951/resnet_pretext.pth 
+downstream model save at  ./record/weight/05190951/resnet_downstream.pth 
+log write at  ./record/log/05190951.txt 
+mask save at  ./record/mask/05190951/ 
+no model in ./record/weight/05190951/resnet_pretext.pth 
+================ pretext ================ 
+current lr: 0.010000 
+2022-05-19 09:52:20- epoch: 1/512 - train loss : 10.381 - nce : 3.44 - coor(l/w) : 0.06/0.10 - mask(l/w) : 69.35/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.010000 
+2022-05-19 09:53:24- epoch: 2/512 - train loss : 3.451 - nce : 3.44 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.05/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.010000 
+2022-05-19 09:54:25- epoch: 3/512 - train loss : 3.449 - nce : 3.44 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.03/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.010000 
+2022-05-19 09:55:24- epoch: 4/512 - train loss : 3.442 - nce : 3.43 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.03/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.010000 
+2022-05-19 09:56:26- epoch: 5/512 - train loss : 3.439 - nce : 3.43 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.03/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.010000 
+2022-05-19 09:57:26- epoch: 6/512 - train loss : 3.454 - nce : 3.45 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.02/0.10  
+current lr: 0.010000 
+2022-05-19 09:58:27- epoch: 7/512 - train loss : 3.436 - nce : 3.43 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.02/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.010000 
+2022-05-19 09:59:28- epoch: 8/512 - train loss : 3.452 - nce : 3.45 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.010000 
+2022-05-19 10:00:30- epoch: 9/512 - train loss : 3.448 - nce : 3.44 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.010000 
+2022-05-19 10:01:33- epoch: 10/512 - train loss : 3.444 - nce : 3.44 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.010000 
+2022-05-19 10:02:34- epoch: 11/512 - train loss : 3.445 - nce : 3.44 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.010000 
+2022-05-19 10:03:37- epoch: 12/512 - train loss : 3.443 - nce : 3.44 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.010000 
+2022-05-19 10:04:39- epoch: 13/512 - train loss : 3.441 - nce : 3.44 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.009999 
+2022-05-19 10:05:42- epoch: 14/512 - train loss : 3.445 - nce : 3.44 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.009998 
+2022-05-19 10:06:46- epoch: 15/512 - train loss : 3.433 - nce : 3.43 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.01/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009998 
+2022-05-19 10:07:52- epoch: 16/512 - train loss : 3.433 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.009997 
+2022-05-19 10:08:58- epoch: 17/512 - train loss : 3.442 - nce : 3.44 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.009995 
+2022-05-19 10:10:02- epoch: 18/512 - train loss : 3.457 - nce : 3.44 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.13/0.10  
+current lr: 0.009994 
+2022-05-19 10:11:07- epoch: 19/512 - train loss : 3.441 - nce : 3.44 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.009992 
+2022-05-19 10:12:12- epoch: 20/512 - train loss : 3.437 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.009991 
+2022-05-19 10:13:19- epoch: 21/512 - train loss : 3.442 - nce : 3.44 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.009989 
+2022-05-19 10:14:25- epoch: 22/512 - train loss : 3.438 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009986 
+2022-05-19 10:15:32- epoch: 23/512 - train loss : 3.442 - nce : 3.44 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009984 
+2022-05-19 10:16:40- epoch: 24/512 - train loss : 3.436 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009982 
+2022-05-19 10:17:48- epoch: 25/512 - train loss : 3.434 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.01/0.10  
+current lr: 0.009979 
+2022-05-19 10:18:56- epoch: 26/512 - train loss : 3.446 - nce : 3.44 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009976 
+2022-05-19 10:20:05- epoch: 27/512 - train loss : 3.433 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009973 
+2022-05-19 10:21:14- epoch: 28/512 - train loss : 3.439 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009970 
+2022-05-19 10:22:23- epoch: 29/512 - train loss : 3.431 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009966 
+2022-05-19 10:23:33- epoch: 30/512 - train loss : 3.430 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009962 
+2022-05-19 10:24:46- epoch: 31/512 - train loss : 3.435 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009959 
+2022-05-19 10:25:56- epoch: 32/512 - train loss : 3.437 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009955 
+2022-05-19 10:27:08- epoch: 33/512 - train loss : 3.433 - nce : 3.43 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009950 
+2022-05-19 10:28:21- epoch: 34/512 - train loss : 3.446 - nce : 3.44 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009946 
+2022-05-19 10:29:33- epoch: 35/512 - train loss : 3.432 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009941 
+2022-05-19 10:30:46- epoch: 36/512 - train loss : 3.424 - nce : 3.42 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009937 
+2022-05-19 10:32:02- epoch: 37/512 - train loss : 3.430 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009932 
+2022-05-19 10:33:18- epoch: 38/512 - train loss : 3.427 - nce : 3.42 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009926 
+2022-05-19 10:34:32- epoch: 39/512 - train loss : 3.428 - nce : 3.42 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009921 
+2022-05-19 10:35:47- epoch: 40/512 - train loss : 3.435 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009916 
+2022-05-19 10:37:03- epoch: 41/512 - train loss : 3.431 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009910 
+2022-05-19 10:38:20- epoch: 42/512 - train loss : 3.421 - nce : 3.42 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009904 
+2022-05-19 10:39:37- epoch: 43/512 - train loss : 3.434 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009898 
+2022-05-19 10:40:53- epoch: 44/512 - train loss : 3.422 - nce : 3.42 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009892 
+2022-05-19 10:42:11- epoch: 45/512 - train loss : 3.432 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009885 
+2022-05-19 10:43:28- epoch: 46/512 - train loss : 3.430 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009879 
+2022-05-19 10:44:46- epoch: 47/512 - train loss : 3.432 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009872 
+2022-05-19 10:46:03- epoch: 48/512 - train loss : 3.432 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009865 
+2022-05-19 10:47:22- epoch: 49/512 - train loss : 3.424 - nce : 3.42 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009858 
+2022-05-19 10:48:41- epoch: 50/512 - train loss : 3.420 - nce : 3.42 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009850 
+2022-05-19 10:50:01- epoch: 51/512 - train loss : 3.416 - nce : 3.41 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009843 
+2022-05-19 10:51:21- epoch: 52/512 - train loss : 3.424 - nce : 3.42 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009835 
+2022-05-19 10:52:42- epoch: 53/512 - train loss : 3.408 - nce : 3.40 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009827 
+2022-05-19 10:54:02- epoch: 54/512 - train loss : 3.419 - nce : 3.42 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009819 
+2022-05-19 10:55:23- epoch: 55/512 - train loss : 3.415 - nce : 3.41 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009811 
+2022-05-19 10:56:44- epoch: 56/512 - train loss : 3.429 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009802 
+2022-05-19 10:58:06- epoch: 57/512 - train loss : 3.430 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009794 
+2022-05-19 10:59:23- epoch: 58/512 - train loss : 3.428 - nce : 3.42 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009785 
+2022-05-19 11:00:42- epoch: 59/512 - train loss : 3.434 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009776 
+2022-05-19 11:02:00- epoch: 60/512 - train loss : 3.431 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009767 
+2022-05-19 11:03:19- epoch: 61/512 - train loss : 3.437 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009757 
+2022-05-19 11:04:38- epoch: 62/512 - train loss : 3.430 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009748 
+2022-05-19 11:05:58- epoch: 63/512 - train loss : 3.429 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009738 
+2022-05-19 11:07:19- epoch: 64/512 - train loss : 3.438 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009728 
+2022-05-19 11:08:39- epoch: 65/512 - train loss : 3.432 - nce : 3.43 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009718 
+2022-05-19 11:10:00- epoch: 66/512 - train loss : 3.426 - nce : 3.42 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009708 
+2022-05-19 11:11:22- epoch: 67/512 - train loss : 3.429 - nce : 3.43 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009697 
+2022-05-19 11:12:45- epoch: 68/512 - train loss : 3.423 - nce : 3.42 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009687 
+2022-05-19 11:14:08- epoch: 69/512 - train loss : 3.424 - nce : 3.42 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009676 
+2022-05-19 11:15:31- epoch: 70/512 - train loss : 3.414 - nce : 3.41 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009665 
+2022-05-19 11:16:54- epoch: 71/512 - train loss : 3.412 - nce : 3.41 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009654 
+2022-05-19 11:18:17- epoch: 72/512 - train loss : 3.407 - nce : 3.40 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009643 
+2022-05-19 11:19:43- epoch: 73/512 - train loss : 3.407 - nce : 3.40 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009631 
+2022-05-19 11:21:07- epoch: 74/512 - train loss : 3.414 - nce : 3.41 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009619 
+2022-05-19 11:22:31- epoch: 75/512 - train loss : 3.416 - nce : 3.41 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009608 
+2022-05-19 11:23:58- epoch: 76/512 - train loss : 3.397 - nce : 3.39 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009596 
+2022-05-19 11:25:26- epoch: 77/512 - train loss : 3.395 - nce : 3.39 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009583 
+2022-05-19 11:26:53- epoch: 78/512 - train loss : 3.396 - nce : 3.39 - coor(l/w) : 0.06/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009571 
+2022-05-19 11:28:20- epoch: 79/512 - train loss : 3.426 - nce : 3.42 - coor(l/w) : 0.06/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009559 
+2022-05-19 11:29:48- epoch: 80/512 - train loss : 3.414 - nce : 3.41 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009546 
+2022-05-19 11:31:16- epoch: 81/512 - train loss : 3.426 - nce : 3.42 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009533 
+2022-05-19 11:32:45- epoch: 82/512 - train loss : 3.428 - nce : 3.42 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009520 
+2022-05-19 11:34:15- epoch: 83/512 - train loss : 3.439 - nce : 3.43 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009507 
+2022-05-19 11:35:44- epoch: 84/512 - train loss : 3.401 - nce : 3.40 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009493 
+2022-05-19 11:37:14- epoch: 85/512 - train loss : 3.381 - nce : 3.38 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009480 
+2022-05-19 11:38:44- epoch: 86/512 - train loss : 3.368 - nce : 3.36 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009466 
+2022-05-19 11:40:15- epoch: 87/512 - train loss : 3.358 - nce : 3.35 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009452 
+2022-05-19 11:41:46- epoch: 88/512 - train loss : 3.365 - nce : 3.36 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009438 
+2022-05-19 11:43:14- epoch: 89/512 - train loss : 3.415 - nce : 3.41 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009424 
+2022-05-19 11:44:42- epoch: 90/512 - train loss : 3.365 - nce : 3.36 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009410 
+2022-05-19 11:46:12- epoch: 91/512 - train loss : 3.351 - nce : 3.35 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009395 
+2022-05-19 11:47:42- epoch: 92/512 - train loss : 3.338 - nce : 3.33 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009380 
+2022-05-19 11:49:12- epoch: 93/512 - train loss : 3.316 - nce : 3.31 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009365 
+2022-05-19 11:50:41- epoch: 94/512 - train loss : 3.343 - nce : 3.34 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009350 
+2022-05-19 11:52:11- epoch: 95/512 - train loss : 3.339 - nce : 3.33 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009335 
+2022-05-19 11:53:42- epoch: 96/512 - train loss : 3.327 - nce : 3.32 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009320 
+2022-05-19 11:55:14- epoch: 97/512 - train loss : 3.324 - nce : 3.32 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009304 
+2022-05-19 11:56:46- epoch: 98/512 - train loss : 3.315 - nce : 3.31 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009289 
+2022-05-19 11:58:19- epoch: 99/512 - train loss : 3.325 - nce : 3.32 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009273 
+2022-05-19 11:59:53- epoch: 100/512 - train loss : 3.352 - nce : 3.35 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009257 
+2022-05-19 12:01:27- epoch: 101/512 - train loss : 3.314 - nce : 3.31 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009241 
+2022-05-19 12:03:02- epoch: 102/512 - train loss : 3.325 - nce : 3.32 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009224 
+2022-05-19 12:04:37- epoch: 103/512 - train loss : 3.349 - nce : 3.35 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009208 
+2022-05-19 12:06:12- epoch: 104/512 - train loss : 3.307 - nce : 3.30 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009191 
+2022-05-19 12:07:48- epoch: 105/512 - train loss : 3.308 - nce : 3.30 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009174 
+2022-05-19 12:09:24- epoch: 106/512 - train loss : 3.296 - nce : 3.29 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009157 
+2022-05-19 12:11:01- epoch: 107/512 - train loss : 3.297 - nce : 3.29 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009140 
+2022-05-19 12:12:38- epoch: 108/512 - train loss : 3.308 - nce : 3.30 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009123 
+2022-05-19 12:14:12- epoch: 109/512 - train loss : 3.299 - nce : 3.29 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009106 
+2022-05-19 12:15:45- epoch: 110/512 - train loss : 3.311 - nce : 3.31 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009088 
+2022-05-19 12:17:19- epoch: 111/512 - train loss : 3.288 - nce : 3.28 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009070 
+2022-05-19 12:18:56- epoch: 112/512 - train loss : 3.282 - nce : 3.28 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.009052 
+2022-05-19 12:20:32- epoch: 113/512 - train loss : 3.283 - nce : 3.28 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009034 
+2022-05-19 12:22:08- epoch: 114/512 - train loss : 3.358 - nce : 3.35 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.009016 
+2022-05-19 12:23:45- epoch: 115/512 - train loss : 3.353 - nce : 3.35 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008998 
+2022-05-19 12:25:21- epoch: 116/512 - train loss : 3.306 - nce : 3.30 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008979 
+2022-05-19 12:27:00- epoch: 117/512 - train loss : 3.292 - nce : 3.29 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008961 
+2022-05-19 12:28:39- epoch: 118/512 - train loss : 3.288 - nce : 3.28 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008942 
+2022-05-19 12:30:17- epoch: 119/512 - train loss : 3.284 - nce : 3.28 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008923 
+2022-05-19 12:31:57- epoch: 120/512 - train loss : 3.273 - nce : 3.27 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008904 
+2022-05-19 12:33:38- epoch: 121/512 - train loss : 3.263 - nce : 3.26 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008884 
+2022-05-19 12:35:19- epoch: 122/512 - train loss : 3.231 - nce : 3.23 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008865 
+2022-05-19 12:36:59- epoch: 123/512 - train loss : 3.242 - nce : 3.24 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008846 
+2022-05-19 12:38:40- epoch: 124/512 - train loss : 3.219 - nce : 3.22 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008826 
+2022-05-19 12:40:22- epoch: 125/512 - train loss : 3.227 - nce : 3.22 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008806 
+2022-05-19 12:42:04- epoch: 126/512 - train loss : 3.197 - nce : 3.19 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008786 
+2022-05-19 12:43:46- epoch: 127/512 - train loss : 3.193 - nce : 3.19 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008766 
+2022-05-19 12:45:29- epoch: 128/512 - train loss : 3.197 - nce : 3.19 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008746 
+2022-05-19 12:47:11- epoch: 129/512 - train loss : 3.190 - nce : 3.19 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008725 
+2022-05-19 12:48:55- epoch: 130/512 - train loss : 3.176 - nce : 3.17 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008705 
+2022-05-19 12:50:40- epoch: 131/512 - train loss : 3.181 - nce : 3.18 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008684 
+2022-05-19 12:52:22- epoch: 132/512 - train loss : 3.168 - nce : 3.16 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008663 
+2022-05-19 12:54:07- epoch: 133/512 - train loss : 3.167 - nce : 3.16 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008642 
+2022-05-19 12:55:52- epoch: 134/512 - train loss : 3.157 - nce : 3.15 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008621 
+2022-05-19 12:57:38- epoch: 135/512 - train loss : 3.150 - nce : 3.15 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008600 
+2022-05-19 12:59:24- epoch: 136/512 - train loss : 3.150 - nce : 3.15 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008579 
+2022-05-19 13:01:10- epoch: 137/512 - train loss : 3.142 - nce : 3.14 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008557 
+2022-05-19 13:02:52- epoch: 138/512 - train loss : 3.125 - nce : 3.12 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008536 
+2022-05-19 13:04:34- epoch: 139/512 - train loss : 3.126 - nce : 3.12 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008514 
+2022-05-19 13:06:18- epoch: 140/512 - train loss : 3.137 - nce : 3.13 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008492 
+2022-05-19 13:08:00- epoch: 141/512 - train loss : 3.128 - nce : 3.12 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008470 
+2022-05-19 13:09:43- epoch: 142/512 - train loss : 3.129 - nce : 3.13 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008448 
+2022-05-19 13:11:28- epoch: 143/512 - train loss : 3.124 - nce : 3.12 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008425 
+2022-05-19 13:13:12- epoch: 144/512 - train loss : 3.117 - nce : 3.11 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008403 
+2022-05-19 13:14:57- epoch: 145/512 - train loss : 3.121 - nce : 3.12 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008380 
+2022-05-19 13:16:44- epoch: 146/512 - train loss : 3.111 - nce : 3.11 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008358 
+2022-05-19 13:18:31- epoch: 147/512 - train loss : 3.118 - nce : 3.11 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008335 
+2022-05-19 13:20:15- epoch: 148/512 - train loss : 3.116 - nce : 3.11 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008312 
+2022-05-19 13:22:01- epoch: 149/512 - train loss : 3.112 - nce : 3.11 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008289 
+2022-05-19 13:23:48- epoch: 150/512 - train loss : 3.109 - nce : 3.10 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008266 
+2022-05-19 13:25:35- epoch: 151/512 - train loss : 3.108 - nce : 3.10 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008243 
+2022-05-19 13:27:24- epoch: 152/512 - train loss : 3.105 - nce : 3.10 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008219 
+2022-05-19 13:29:14- epoch: 153/512 - train loss : 3.105 - nce : 3.10 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008196 
+2022-05-19 13:31:03- epoch: 154/512 - train loss : 3.096 - nce : 3.09 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008172 
+2022-05-19 13:32:53- epoch: 155/512 - train loss : 3.095 - nce : 3.09 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008148 
+2022-05-19 13:34:43- epoch: 156/512 - train loss : 3.099 - nce : 3.10 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008124 
+2022-05-19 13:36:33- epoch: 157/512 - train loss : 3.097 - nce : 3.09 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008100 
+2022-05-19 13:38:24- epoch: 158/512 - train loss : 3.097 - nce : 3.09 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008076 
+2022-05-19 13:40:15- epoch: 159/512 - train loss : 3.093 - nce : 3.09 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008052 
+2022-05-19 13:42:08- epoch: 160/512 - train loss : 3.087 - nce : 3.08 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.008028 
+2022-05-19 13:44:01- epoch: 161/512 - train loss : 3.089 - nce : 3.08 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.008003 
+2022-05-19 13:45:53- epoch: 162/512 - train loss : 3.090 - nce : 3.09 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007978 
+2022-05-19 13:47:45- epoch: 163/512 - train loss : 3.092 - nce : 3.09 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007954 
+2022-05-19 13:49:39- epoch: 164/512 - train loss : 3.090 - nce : 3.09 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007929 
+2022-05-19 13:51:32- epoch: 165/512 - train loss : 3.087 - nce : 3.08 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007904 
+2022-05-19 13:53:27- epoch: 166/512 - train loss : 3.086 - nce : 3.08 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007879 
+2022-05-19 13:55:22- epoch: 167/512 - train loss : 3.080 - nce : 3.08 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007854 
+2022-05-19 13:57:16- epoch: 168/512 - train loss : 3.086 - nce : 3.08 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007829 
+2022-05-19 13:59:11- epoch: 169/512 - train loss : 3.076 - nce : 3.07 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007803 
+2022-05-19 14:01:07- epoch: 170/512 - train loss : 3.068 - nce : 3.06 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007778 
+2022-05-19 14:03:03- epoch: 171/512 - train loss : 3.066 - nce : 3.06 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007752 
+2022-05-19 14:05:00- epoch: 172/512 - train loss : 3.070 - nce : 3.07 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007727 
+2022-05-19 14:06:55- epoch: 173/512 - train loss : 3.059 - nce : 3.05 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007701 
+2022-05-19 14:08:52- epoch: 174/512 - train loss : 3.058 - nce : 3.05 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007675 
+2022-05-19 14:10:49- epoch: 175/512 - train loss : 3.052 - nce : 3.05 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007649 
+2022-05-19 14:12:47- epoch: 176/512 - train loss : 3.056 - nce : 3.05 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007623 
+2022-05-19 14:14:44- epoch: 177/512 - train loss : 3.056 - nce : 3.05 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007597 
+2022-05-19 14:16:41- epoch: 178/512 - train loss : 3.045 - nce : 3.04 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007571 
+2022-05-19 14:18:39- epoch: 179/512 - train loss : 3.047 - nce : 3.04 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007544 
+2022-05-19 14:20:37- epoch: 180/512 - train loss : 3.045 - nce : 3.04 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007518 
+2022-05-19 14:22:35- epoch: 181/512 - train loss : 3.049 - nce : 3.04 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007491 
+2022-05-19 14:24:35- epoch: 182/512 - train loss : 3.044 - nce : 3.04 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007464 
+2022-05-19 14:26:33- epoch: 183/512 - train loss : 3.043 - nce : 3.04 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007438 
+2022-05-19 14:28:33- epoch: 184/512 - train loss : 3.042 - nce : 3.04 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007411 
+2022-05-19 14:30:33- epoch: 185/512 - train loss : 3.041 - nce : 3.04 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007384 
+2022-05-19 14:32:33- epoch: 186/512 - train loss : 3.039 - nce : 3.03 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007357 
+2022-05-19 14:34:34- epoch: 187/512 - train loss : 3.041 - nce : 3.04 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007330 
+2022-05-19 14:36:35- epoch: 188/512 - train loss : 3.036 - nce : 3.03 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007303 
+2022-05-19 14:38:36- epoch: 189/512 - train loss : 3.035 - nce : 3.03 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007275 
+2022-05-19 14:40:38- epoch: 190/512 - train loss : 3.035 - nce : 3.03 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007248 
+2022-05-19 14:42:37- epoch: 191/512 - train loss : 3.031 - nce : 3.03 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007221 
+2022-05-19 14:44:40- epoch: 192/512 - train loss : 3.035 - nce : 3.03 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007193 
+2022-05-19 14:46:40- epoch: 193/512 - train loss : 3.034 - nce : 3.03 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007165 
+2022-05-19 14:48:41- epoch: 194/512 - train loss : 3.032 - nce : 3.03 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007138 
+2022-05-19 14:50:42- epoch: 195/512 - train loss : 3.035 - nce : 3.03 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007110 
+2022-05-19 14:52:44- epoch: 196/512 - train loss : 3.027 - nce : 3.02 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.007082 
+2022-05-19 14:54:48- epoch: 197/512 - train loss : 3.029 - nce : 3.02 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007054 
+2022-05-19 14:56:51- epoch: 198/512 - train loss : 3.031 - nce : 3.03 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.007026 
+2022-05-19 14:58:54- epoch: 199/512 - train loss : 3.028 - nce : 3.02 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006998 
+2022-05-19 15:00:58- epoch: 200/512 - train loss : 3.025 - nce : 3.02 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006970 
+2022-05-19 15:03:03- epoch: 201/512 - train loss : 3.017 - nce : 3.01 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006942 
+2022-05-19 15:05:08- epoch: 202/512 - train loss : 3.019 - nce : 3.01 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006913 
+2022-05-19 15:07:13- epoch: 203/512 - train loss : 3.016 - nce : 3.01 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006885 
+2022-05-19 15:09:19- epoch: 204/512 - train loss : 3.019 - nce : 3.01 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006857 
+2022-05-19 15:11:22- epoch: 205/512 - train loss : 3.014 - nce : 3.01 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006828 
+2022-05-19 15:13:28- epoch: 206/512 - train loss : 3.009 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006799 
+2022-05-19 15:15:34- epoch: 207/512 - train loss : 3.015 - nce : 3.01 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006771 
+2022-05-19 15:17:40- epoch: 208/512 - train loss : 3.015 - nce : 3.01 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006742 
+2022-05-19 15:19:47- epoch: 209/512 - train loss : 3.006 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006713 
+2022-05-19 15:21:55- epoch: 210/512 - train loss : 3.004 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006684 
+2022-05-19 15:24:02- epoch: 211/512 - train loss : 3.007 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006656 
+2022-05-19 15:26:10- epoch: 212/512 - train loss : 3.005 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006627 
+2022-05-19 15:28:19- epoch: 213/512 - train loss : 3.007 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006598 
+2022-05-19 15:30:28- epoch: 214/512 - train loss : 3.002 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006568 
+2022-05-19 15:32:37- epoch: 215/512 - train loss : 3.004 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006539 
+2022-05-19 15:34:41- epoch: 216/512 - train loss : 3.001 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006510 
+2022-05-19 15:36:46- epoch: 217/512 - train loss : 3.000 - nce : 2.99 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006481 
+2022-05-19 15:38:51- epoch: 218/512 - train loss : 3.000 - nce : 3.00 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006451 
+2022-05-19 15:40:56- epoch: 219/512 - train loss : 2.995 - nce : 2.99 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006422 
+2022-05-19 15:43:03- epoch: 220/512 - train loss : 2.997 - nce : 2.99 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006393 
+2022-05-19 15:45:09- epoch: 221/512 - train loss : 2.995 - nce : 2.99 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006363 
+2022-05-19 15:47:14- epoch: 222/512 - train loss : 2.992 - nce : 2.99 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006334 
+2022-05-19 15:49:21- epoch: 223/512 - train loss : 2.997 - nce : 2.99 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006304 
+2022-05-19 15:51:29- epoch: 224/512 - train loss : 2.989 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006274 
+2022-05-19 15:53:37- epoch: 225/512 - train loss : 2.990 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006245 
+2022-05-19 15:55:44- epoch: 226/512 - train loss : 2.985 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006215 
+2022-05-19 15:57:53- epoch: 227/512 - train loss : 2.985 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006185 
+2022-05-19 16:00:02- epoch: 228/512 - train loss : 2.987 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006155 
+2022-05-19 16:02:10- epoch: 229/512 - train loss : 2.980 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006125 
+2022-05-19 16:04:19- epoch: 230/512 - train loss : 2.985 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006096 
+2022-05-19 16:06:28- epoch: 231/512 - train loss : 2.983 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006066 
+2022-05-19 16:08:38- epoch: 232/512 - train loss : 2.981 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.006036 
+2022-05-19 16:10:47- epoch: 233/512 - train loss : 2.979 - nce : 2.97 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.006006 
+2022-05-19 16:12:57- epoch: 234/512 - train loss : 2.980 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005975 
+2022-05-19 16:15:08- epoch: 235/512 - train loss : 2.978 - nce : 2.97 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005945 
+2022-05-19 16:17:18- epoch: 236/512 - train loss : 2.977 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005915 
+2022-05-19 16:19:30- epoch: 237/512 - train loss : 2.980 - nce : 2.98 - coor(l/w) : 0.05/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005885 
+2022-05-19 16:21:42- epoch: 238/512 - train loss : 2.978 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005855 
+2022-05-19 16:23:54- epoch: 239/512 - train loss : 2.975 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005825 
+2022-05-19 16:26:09- epoch: 240/512 - train loss : 2.974 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005794 
+2022-05-19 16:28:24- epoch: 241/512 - train loss : 2.972 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005764 
+2022-05-19 16:30:38- epoch: 242/512 - train loss : 2.969 - nce : 2.96 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005734 
+2022-05-19 16:32:54- epoch: 243/512 - train loss : 2.972 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005703 
+2022-05-19 16:35:08- epoch: 244/512 - train loss : 2.971 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005673 
+2022-05-19 16:37:25- epoch: 245/512 - train loss : 2.970 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005642 
+2022-05-19 16:39:41- epoch: 246/512 - train loss : 2.968 - nce : 2.96 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005612 
+2022-05-19 16:41:59- epoch: 247/512 - train loss : 2.968 - nce : 2.96 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005582 
+2022-05-19 16:44:18- epoch: 248/512 - train loss : 2.971 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005551 
+2022-05-19 16:46:32- epoch: 249/512 - train loss : 2.965 - nce : 2.96 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005521 
+2022-05-19 16:48:46- epoch: 250/512 - train loss : 2.969 - nce : 2.97 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005490 
+2022-05-19 16:51:01- epoch: 251/512 - train loss : 2.962 - nce : 2.96 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005460 
+2022-05-19 16:53:19- epoch: 252/512 - train loss : 2.962 - nce : 2.96 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005429 
+2022-05-19 16:55:36- epoch: 253/512 - train loss : 2.964 - nce : 2.96 - coor(l/w) : 0.04/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005398 
+2022-05-19 16:57:53- epoch: 254/512 - train loss : 2.963 - nce : 2.96 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005368 
+2022-05-19 17:00:10- epoch: 255/512 - train loss : 2.959 - nce : 2.96 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005337 
+2022-05-19 17:02:28- epoch: 256/512 - train loss : 2.960 - nce : 2.96 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005307 
+2022-05-19 17:04:46- epoch: 257/512 - train loss : 2.959 - nce : 2.96 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005276 
+2022-05-19 17:07:03- epoch: 258/512 - train loss : 2.958 - nce : 2.96 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005245 
+2022-05-19 17:09:20- epoch: 259/512 - train loss : 2.959 - nce : 2.96 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005215 
+2022-05-19 17:11:39- epoch: 260/512 - train loss : 2.956 - nce : 2.95 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005184 
+2022-05-19 17:13:59- epoch: 261/512 - train loss : 2.957 - nce : 2.95 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005153 
+2022-05-19 17:16:18- epoch: 262/512 - train loss : 2.955 - nce : 2.95 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005123 
+2022-05-19 17:18:40- epoch: 263/512 - train loss : 2.961 - nce : 2.96 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.005092 
+2022-05-19 17:21:01- epoch: 264/512 - train loss : 2.954 - nce : 2.95 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005061 
+2022-05-19 17:23:23- epoch: 265/512 - train loss : 2.954 - nce : 2.95 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005031 
+2022-05-19 17:25:44- epoch: 266/512 - train loss : 2.952 - nce : 2.95 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.005000 
+2022-05-19 17:28:06- epoch: 267/512 - train loss : 2.950 - nce : 2.95 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.004969 
+2022-05-19 17:30:27- epoch: 268/512 - train loss : 2.953 - nce : 2.95 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004939 
+2022-05-19 17:32:49- epoch: 269/512 - train loss : 2.950 - nce : 2.95 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004908 
+2022-05-19 17:35:12- epoch: 270/512 - train loss : 2.953 - nce : 2.95 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004877 
+2022-05-19 17:37:35- epoch: 271/512 - train loss : 2.952 - nce : 2.95 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004847 
+2022-05-19 17:39:58- epoch: 272/512 - train loss : 2.950 - nce : 2.95 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004816 
+2022-05-19 17:42:21- epoch: 273/512 - train loss : 2.950 - nce : 2.95 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004785 
+2022-05-19 17:44:45- epoch: 274/512 - train loss : 2.950 - nce : 2.95 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004755 
+2022-05-19 17:47:08- epoch: 275/512 - train loss : 2.950 - nce : 2.95 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004724 
+2022-05-19 17:49:32- epoch: 276/512 - train loss : 2.949 - nce : 2.95 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.004693 
+2022-05-19 17:51:57- epoch: 277/512 - train loss : 2.945 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.004663 
+2022-05-19 17:54:22- epoch: 278/512 - train loss : 2.946 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004632 
+2022-05-19 17:56:47- epoch: 279/512 - train loss : 2.946 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004602 
+2022-05-19 17:59:12- epoch: 280/512 - train loss : 2.947 - nce : 2.95 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004571 
+2022-05-19 18:01:38- epoch: 281/512 - train loss : 2.948 - nce : 2.95 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004540 
+2022-05-19 18:04:04- epoch: 282/512 - train loss : 2.945 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.004510 
+2022-05-19 18:06:30- epoch: 283/512 - train loss : 2.945 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004479 
+2022-05-19 18:08:58- epoch: 284/512 - train loss : 2.946 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004449 
+2022-05-19 18:11:27- epoch: 285/512 - train loss : 2.942 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.004418 
+2022-05-19 18:13:54- epoch: 286/512 - train loss : 2.943 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004388 
+2022-05-19 18:16:22- epoch: 287/512 - train loss : 2.943 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004358 
+2022-05-19 18:18:51- epoch: 288/512 - train loss : 2.942 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.004327 
+2022-05-19 18:21:22- epoch: 289/512 - train loss : 2.939 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.004297 
+2022-05-19 18:23:51- epoch: 290/512 - train loss : 2.940 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004266 
+2022-05-19 18:26:21- epoch: 291/512 - train loss : 2.941 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004236 
+2022-05-19 18:28:50- epoch: 292/512 - train loss : 2.940 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004206 
+2022-05-19 18:31:19- epoch: 293/512 - train loss : 2.940 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004175 
+2022-05-19 18:33:49- epoch: 294/512 - train loss : 2.942 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004145 
+2022-05-19 18:36:19- epoch: 295/512 - train loss : 2.941 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004115 
+2022-05-19 18:38:51- epoch: 296/512 - train loss : 2.940 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004085 
+2022-05-19 18:41:21- epoch: 297/512 - train loss : 2.938 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.004055 
+2022-05-19 18:43:54- epoch: 298/512 - train loss : 2.940 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.004025 
+2022-05-19 18:46:26- epoch: 299/512 - train loss : 2.936 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003994 
+2022-05-19 18:48:58- epoch: 300/512 - train loss : 2.938 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003964 
+2022-05-19 18:51:29- epoch: 301/512 - train loss : 2.936 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003934 
+2022-05-19 18:54:01- epoch: 302/512 - train loss : 2.938 - nce : 2.94 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003904 
+2022-05-19 18:56:31- epoch: 303/512 - train loss : 2.936 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003875 
+2022-05-19 18:59:03- epoch: 304/512 - train loss : 2.935 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003845 
+2022-05-19 19:01:38- epoch: 305/512 - train loss : 2.937 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003815 
+2022-05-19 19:04:13- epoch: 306/512 - train loss : 2.935 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003785 
+2022-05-19 19:06:47- epoch: 307/512 - train loss : 2.936 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003755 
+2022-05-19 19:09:22- epoch: 308/512 - train loss : 2.934 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003726 
+2022-05-19 19:11:56- epoch: 309/512 - train loss : 2.936 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003696 
+2022-05-19 19:14:30- epoch: 310/512 - train loss : 2.934 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003666 
+2022-05-19 19:17:04- epoch: 311/512 - train loss : 2.933 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003637 
+2022-05-19 19:19:39- epoch: 312/512 - train loss : 2.936 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003607 
+2022-05-19 19:22:13- epoch: 313/512 - train loss : 2.934 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003578 
+2022-05-19 19:24:49- epoch: 314/512 - train loss : 2.933 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003549 
+2022-05-19 19:27:25- epoch: 315/512 - train loss : 2.933 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003519 
+2022-05-19 19:30:03- epoch: 316/512 - train loss : 2.930 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003490 
+2022-05-19 19:32:40- epoch: 317/512 - train loss : 2.932 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003461 
+2022-05-19 19:35:17- epoch: 318/512 - train loss : 2.932 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003432 
+2022-05-19 19:37:54- epoch: 319/512 - train loss : 2.931 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003402 
+2022-05-19 19:40:30- epoch: 320/512 - train loss : 2.929 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003373 
+2022-05-19 19:43:06- epoch: 321/512 - train loss : 2.931 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003344 
+2022-05-19 19:45:42- epoch: 322/512 - train loss : 2.930 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003316 
+2022-05-19 19:48:20- epoch: 323/512 - train loss : 2.931 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003287 
+2022-05-19 19:50:56- epoch: 324/512 - train loss : 2.931 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003258 
+2022-05-19 19:53:34- epoch: 325/512 - train loss : 2.930 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003229 
+2022-05-19 19:56:13- epoch: 326/512 - train loss : 2.929 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003201 
+2022-05-19 19:58:53- epoch: 327/512 - train loss : 2.930 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003172 
+2022-05-19 20:01:32- epoch: 328/512 - train loss : 2.929 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003143 
+2022-05-19 20:04:14- epoch: 329/512 - train loss : 2.928 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003115 
+2022-05-19 20:06:55- epoch: 330/512 - train loss : 2.928 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003087 
+2022-05-19 20:09:35- epoch: 331/512 - train loss : 2.929 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003058 
+2022-05-19 20:12:16- epoch: 332/512 - train loss : 2.929 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.003030 
+2022-05-19 20:14:57- epoch: 333/512 - train loss : 2.927 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.003002 
+2022-05-19 20:17:38- epoch: 334/512 - train loss : 2.927 - nce : 2.93 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002974 
+2022-05-19 20:20:21- epoch: 335/512 - train loss : 2.926 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002946 
+2022-05-19 20:23:04- epoch: 336/512 - train loss : 2.927 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002918 
+2022-05-19 20:25:47- epoch: 337/512 - train loss : 2.924 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002890 
+2022-05-19 20:28:29- epoch: 338/512 - train loss : 2.924 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002862 
+2022-05-19 20:31:12- epoch: 339/512 - train loss : 2.925 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002835 
+2022-05-19 20:33:53- epoch: 340/512 - train loss : 2.925 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002807 
+2022-05-19 20:36:36- epoch: 341/512 - train loss : 2.925 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002779 
+2022-05-19 20:39:21- epoch: 342/512 - train loss : 2.924 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002752 
+2022-05-19 20:42:07- epoch: 343/512 - train loss : 2.925 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002725 
+2022-05-19 20:44:50- epoch: 344/512 - train loss : 2.926 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002697 
+2022-05-19 20:47:36- epoch: 345/512 - train loss : 2.925 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002670 
+2022-05-19 20:50:22- epoch: 346/512 - train loss : 2.924 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002643 
+2022-05-19 20:53:07- epoch: 347/512 - train loss : 2.924 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002616 
+2022-05-19 20:55:55- epoch: 348/512 - train loss : 2.924 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002589 
+2022-05-19 20:58:40- epoch: 349/512 - train loss : 2.923 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002562 
+2022-05-19 21:01:28- epoch: 350/512 - train loss : 2.923 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002536 
+2022-05-19 21:04:15- epoch: 351/512 - train loss : 2.925 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002509 
+2022-05-19 21:07:01- epoch: 352/512 - train loss : 2.923 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002482 
+2022-05-19 21:09:50- epoch: 353/512 - train loss : 2.923 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002456 
+2022-05-19 21:12:39- epoch: 354/512 - train loss : 2.920 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002429 
+2022-05-19 21:15:30- epoch: 355/512 - train loss : 2.922 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002403 
+2022-05-19 21:18:19- epoch: 356/512 - train loss : 2.920 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002377 
+2022-05-19 21:21:08- epoch: 357/512 - train loss : 2.921 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002351 
+2022-05-19 21:23:54- epoch: 358/512 - train loss : 2.921 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002325 
+2022-05-19 21:26:44- epoch: 359/512 - train loss : 2.920 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002299 
+2022-05-19 21:29:36- epoch: 360/512 - train loss : 2.920 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002273 
+2022-05-19 21:32:28- epoch: 361/512 - train loss : 2.919 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002248 
+2022-05-19 21:35:17- epoch: 362/512 - train loss : 2.921 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002222 
+2022-05-19 21:38:07- epoch: 363/512 - train loss : 2.918 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002197 
+2022-05-19 21:40:59- epoch: 364/512 - train loss : 2.921 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002171 
+2022-05-19 21:43:50- epoch: 365/512 - train loss : 2.919 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002146 
+2022-05-19 21:46:41- epoch: 366/512 - train loss : 2.919 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002121 
+2022-05-19 21:49:32- epoch: 367/512 - train loss : 2.918 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002096 
+2022-05-19 21:52:24- epoch: 368/512 - train loss : 2.918 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.002071 
+2022-05-19 21:55:17- epoch: 369/512 - train loss : 2.920 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002046 
+2022-05-19 21:58:09- epoch: 370/512 - train loss : 2.920 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.002022 
+2022-05-19 22:01:02- epoch: 371/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001997 
+2022-05-19 22:03:55- epoch: 372/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001972 
+2022-05-19 22:06:49- epoch: 373/512 - train loss : 2.918 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001948 
+2022-05-19 22:09:42- epoch: 374/512 - train loss : 2.917 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001924 
+2022-05-19 22:12:38- epoch: 375/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001900 
+2022-05-19 22:15:33- epoch: 376/512 - train loss : 2.918 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001876 
+2022-05-19 22:18:29- epoch: 377/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001852 
+2022-05-19 22:21:24- epoch: 378/512 - train loss : 2.919 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001828 
+2022-05-19 22:24:20- epoch: 379/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001804 
+2022-05-19 22:27:15- epoch: 380/512 - train loss : 2.918 - nce : 2.92 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001781 
+2022-05-19 22:30:12- epoch: 381/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001757 
+2022-05-19 22:33:09- epoch: 382/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001734 
+2022-05-19 22:36:07- epoch: 383/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001711 
+2022-05-19 22:39:05- epoch: 384/512 - train loss : 2.916 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001688 
+2022-05-19 22:42:04- epoch: 385/512 - train loss : 2.916 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001665 
+2022-05-19 22:45:04- epoch: 386/512 - train loss : 2.918 - nce : 2.92 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001642 
+2022-05-19 22:48:03- epoch: 387/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001620 
+2022-05-19 22:51:03- epoch: 388/512 - train loss : 2.916 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001597 
+2022-05-19 22:54:00- epoch: 389/512 - train loss : 2.916 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001575 
+2022-05-19 22:56:57- epoch: 390/512 - train loss : 2.917 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001552 
+2022-05-19 22:59:54- epoch: 391/512 - train loss : 2.916 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001530 
+2022-05-19 23:02:52- epoch: 392/512 - train loss : 2.915 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001508 
+2022-05-19 23:05:51- epoch: 393/512 - train loss : 2.916 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001486 
+2022-05-19 23:08:49- epoch: 394/512 - train loss : 2.916 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001464 
+2022-05-19 23:11:48- epoch: 395/512 - train loss : 2.915 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001443 
+2022-05-19 23:14:48- epoch: 396/512 - train loss : 2.915 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001421 
+2022-05-19 23:17:49- epoch: 397/512 - train loss : 2.914 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001400 
+2022-05-19 23:20:51- epoch: 398/512 - train loss : 2.914 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001379 
+2022-05-19 23:23:52- epoch: 399/512 - train loss : 2.915 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001358 
+2022-05-19 23:26:53- epoch: 400/512 - train loss : 2.915 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001337 
+2022-05-19 23:29:52- epoch: 401/512 - train loss : 2.915 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001316 
+2022-05-19 23:32:56- epoch: 402/512 - train loss : 2.914 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001295 
+2022-05-19 23:35:58- epoch: 403/512 - train loss : 2.911 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001275 
+2022-05-19 23:39:03- epoch: 404/512 - train loss : 2.914 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001254 
+2022-05-19 23:42:05- epoch: 405/512 - train loss : 2.912 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001234 
+2022-05-19 23:45:08- epoch: 406/512 - train loss : 2.912 - nce : 2.91 - coor(l/w) : 0.03/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001214 
+2022-05-19 23:48:11- epoch: 407/512 - train loss : 2.914 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001194 
+2022-05-19 23:51:15- epoch: 408/512 - train loss : 2.913 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001174 
+2022-05-19 23:54:16- epoch: 409/512 - train loss : 2.913 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001154 
+2022-05-19 23:57:18- epoch: 410/512 - train loss : 2.913 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001135 
+2022-05-20 00:00:21- epoch: 411/512 - train loss : 2.913 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001116 
+2022-05-20 00:03:24- epoch: 412/512 - train loss : 2.912 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001096 
+2022-05-20 00:06:27- epoch: 413/512 - train loss : 2.912 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001077 
+2022-05-20 00:09:31- epoch: 414/512 - train loss : 2.911 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001058 
+2022-05-20 00:12:35- epoch: 415/512 - train loss : 2.910 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.001039 
+2022-05-20 00:15:40- epoch: 416/512 - train loss : 2.913 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001021 
+2022-05-20 00:18:44- epoch: 417/512 - train loss : 2.912 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.001002 
+2022-05-20 00:21:50- epoch: 418/512 - train loss : 2.911 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000984 
+2022-05-20 00:24:56- epoch: 419/512 - train loss : 2.910 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000966 
+2022-05-20 00:28:05- epoch: 420/512 - train loss : 2.911 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000948 
+2022-05-20 00:31:14- epoch: 421/512 - train loss : 2.909 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000930 
+2022-05-20 00:34:23- epoch: 422/512 - train loss : 2.910 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000912 
+2022-05-20 00:37:33- epoch: 423/512 - train loss : 2.910 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000894 
+2022-05-20 00:40:43- epoch: 424/512 - train loss : 2.910 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000877 
+2022-05-20 00:43:53- epoch: 425/512 - train loss : 2.911 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000860 
+2022-05-20 00:47:02- epoch: 426/512 - train loss : 2.910 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000843 
+2022-05-20 00:50:12- epoch: 427/512 - train loss : 2.909 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000826 
+2022-05-20 00:53:24- epoch: 428/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000809 
+2022-05-20 00:56:35- epoch: 429/512 - train loss : 2.911 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000792 
+2022-05-20 00:59:47- epoch: 430/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000776 
+2022-05-20 01:03:00- epoch: 431/512 - train loss : 2.909 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000759 
+2022-05-20 01:06:13- epoch: 432/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000743 
+2022-05-20 01:09:27- epoch: 433/512 - train loss : 2.907 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000727 
+2022-05-20 01:12:40- epoch: 434/512 - train loss : 2.909 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000711 
+2022-05-20 01:15:54- epoch: 435/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000696 
+2022-05-20 01:19:07- epoch: 436/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000680 
+2022-05-20 01:22:22- epoch: 437/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000665 
+2022-05-20 01:25:36- epoch: 438/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000650 
+2022-05-20 01:28:47- epoch: 439/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000635 
+2022-05-20 01:32:01- epoch: 440/512 - train loss : 2.907 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000620 
+2022-05-20 01:35:15- epoch: 441/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000605 
+2022-05-20 01:38:29- epoch: 442/512 - train loss : 2.907 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000590 
+2022-05-20 01:41:42- epoch: 443/512 - train loss : 2.907 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000576 
+2022-05-20 01:44:56- epoch: 444/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000562 
+2022-05-20 01:48:10- epoch: 445/512 - train loss : 2.908 - nce : 2.91 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000548 
+2022-05-20 01:51:24- epoch: 446/512 - train loss : 2.907 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000534 
+2022-05-20 01:54:39- epoch: 447/512 - train loss : 2.905 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000520 
+2022-05-20 01:57:55- epoch: 448/512 - train loss : 2.907 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000507 
+2022-05-20 02:01:09- epoch: 449/512 - train loss : 2.906 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000493 
+2022-05-20 02:04:24- epoch: 450/512 - train loss : 2.906 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000480 
+2022-05-20 02:07:40- epoch: 451/512 - train loss : 2.905 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000467 
+2022-05-20 02:10:57- epoch: 452/512 - train loss : 2.906 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000454 
+2022-05-20 02:14:13- epoch: 453/512 - train loss : 2.906 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000441 
+2022-05-20 02:17:32- epoch: 454/512 - train loss : 2.905 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000429 
+2022-05-20 02:20:51- epoch: 455/512 - train loss : 2.907 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000417 
+2022-05-20 02:24:10- epoch: 456/512 - train loss : 2.905 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000404 
+2022-05-20 02:27:29- epoch: 457/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000392 
+2022-05-20 02:30:50- epoch: 458/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000381 
+2022-05-20 02:34:09- epoch: 459/512 - train loss : 2.905 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000369 
+2022-05-20 02:37:28- epoch: 460/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000357 
+2022-05-20 02:40:47- epoch: 461/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000346 
+2022-05-20 02:44:07- epoch: 462/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000335 
+2022-05-20 02:47:26- epoch: 463/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000324 
+2022-05-20 02:50:46- epoch: 464/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000313 
+2022-05-20 02:54:07- epoch: 465/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000303 
+2022-05-20 02:57:27- epoch: 466/512 - train loss : 2.906 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000292 
+2022-05-20 03:00:47- epoch: 467/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000282 
+2022-05-20 03:04:09- epoch: 468/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000272 
+2022-05-20 03:07:32- epoch: 469/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000262 
+2022-05-20 03:10:54- epoch: 470/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000252 
+2022-05-20 03:14:16- epoch: 471/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000243 
+2022-05-20 03:17:38- epoch: 472/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000233 
+2022-05-20 03:21:00- epoch: 473/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000224 
+2022-05-20 03:24:23- epoch: 474/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000215 
+2022-05-20 03:27:45- epoch: 475/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000206 
+2022-05-20 03:31:07- epoch: 476/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000198 
+2022-05-20 03:34:30- epoch: 477/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000189 
+2022-05-20 03:37:53- epoch: 478/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000181 
+2022-05-20 03:41:16- epoch: 479/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000173 
+2022-05-20 03:44:40- epoch: 480/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000165 
+2022-05-20 03:48:03- epoch: 481/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000157 
+2022-05-20 03:51:28- epoch: 482/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000150 
+2022-05-20 03:54:52- epoch: 483/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000142 
+2022-05-20 03:58:16- epoch: 484/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000135 
+2022-05-20 04:01:41- epoch: 485/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000128 
+2022-05-20 04:05:07- epoch: 486/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000121 
+2022-05-20 04:08:32- epoch: 487/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000115 
+2022-05-20 04:11:57- epoch: 488/512 - train loss : 2.904 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000108 
+2022-05-20 04:15:24- epoch: 489/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000102 
+2022-05-20 04:18:51- epoch: 490/512 - train loss : 2.900 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+Best pretext loss achieved, saving model to ./record/weight/05190951/resnet_downstream.pth & resnet_pretext.pth 
+current lr: 0.000096 
+2022-05-20 04:22:19- epoch: 491/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000090 
+2022-05-20 04:25:46- epoch: 492/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000084 
+2022-05-20 04:29:12- epoch: 493/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000079 
+2022-05-20 04:32:40- epoch: 494/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000074 
+2022-05-20 04:36:08- epoch: 495/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000068 
+2022-05-20 04:39:36- epoch: 496/512 - train loss : 2.901 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000063 
+2022-05-20 04:43:06- epoch: 497/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000059 
+2022-05-20 04:46:36- epoch: 498/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000054 
+2022-05-20 04:50:07- epoch: 499/512 - train loss : 2.901 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000050 
+2022-05-20 04:53:38- epoch: 500/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000045 
+2022-05-20 04:57:10- epoch: 501/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000041 
+2022-05-20 05:00:44- epoch: 502/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000038 
+2022-05-20 05:04:18- epoch: 503/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000034 
+2022-05-20 05:07:52- epoch: 504/512 - train loss : 2.901 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000030 
+2022-05-20 05:11:27- epoch: 505/512 - train loss : 2.903 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000027 
+2022-05-20 05:15:02- epoch: 506/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000024 
+2022-05-20 05:18:38- epoch: 507/512 - train loss : 2.901 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000021 
+2022-05-20 05:22:13- epoch: 508/512 - train loss : 2.901 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000018 
+2022-05-20 05:25:49- epoch: 509/512 - train loss : 2.901 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000016 
+2022-05-20 05:29:26- epoch: 510/512 - train loss : 2.901 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000014 
+2022-05-20 05:33:04- epoch: 511/512 - train loss : 2.901 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+current lr: 0.000011 
+2022-05-20 05:36:45- epoch: 512/512 - train loss : 2.902 - nce : 2.90 - coor(l/w) : 0.02/0.10 - mask(l/w) : 0.00/0.10  
+best pretext weights loaded! epoch:490, acc:0.000, pretext loss:2.900, is pretext:True 
+================ downstream ================ 
+current lr: 0.100000 
+2022-05-20 05:37:24- epoch: 1/128 - train loss: 5.168 - train acc: 0.011 - valid loss: 6.703 - valid acc: 0.0079  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.100000 
+2022-05-20 05:38:01- epoch: 2/128 - train loss: 4.907 - train acc: 0.018 - valid loss: 4.972 - valid acc: 0.0204  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.100000 
+2022-05-20 05:38:38- epoch: 3/128 - train loss: 4.693 - train acc: 0.028 - valid loss: 4.835 - valid acc: 0.0250  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.100000 
+2022-05-20 05:39:16- epoch: 4/128 - train loss: 4.551 - train acc: 0.039 - valid loss: 4.479 - valid acc: 0.0385  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.100000 
+2022-05-20 05:39:53- epoch: 5/128 - train loss: 4.413 - train acc: 0.047 - valid loss: 4.571 - valid acc: 0.0428  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.100000 
+2022-05-20 05:40:30- epoch: 6/128 - train loss: 4.312 - train acc: 0.053 - valid loss: 4.365 - valid acc: 0.0613  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.100000 
+2022-05-20 05:41:08- epoch: 7/128 - train loss: 4.202 - train acc: 0.068 - valid loss: 4.687 - valid acc: 0.0452  
+current lr: 0.100000 
+2022-05-20 05:41:45- epoch: 8/128 - train loss: 4.106 - train acc: 0.079 - valid loss: 4.467 - valid acc: 0.0532  
+current lr: 0.100000 
+2022-05-20 05:42:23- epoch: 9/128 - train loss: 4.015 - train acc: 0.080 - valid loss: 4.343 - valid acc: 0.0775  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.100000 
+2022-05-20 05:43:00- epoch: 10/128 - train loss: 3.899 - train acc: 0.101 - valid loss: 4.198 - valid acc: 0.0790  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.100000 
+2022-05-20 05:43:38- epoch: 11/128 - train loss: 3.821 - train acc: 0.107 - valid loss: 4.258 - valid acc: 0.0803  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.100000 
+2022-05-20 05:44:15- epoch: 12/128 - train loss: 3.759 - train acc: 0.116 - valid loss: 4.009 - valid acc: 0.0965  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.099940 
+2022-05-20 05:44:52- epoch: 13/128 - train loss: 3.680 - train acc: 0.130 - valid loss: 3.783 - valid acc: 0.1203  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.099865 
+2022-05-20 05:45:30- epoch: 14/128 - train loss: 3.575 - train acc: 0.145 - valid loss: 3.820 - valid acc: 0.1288  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.099759 
+2022-05-20 05:46:07- epoch: 15/128 - train loss: 3.469 - train acc: 0.158 - valid loss: 3.791 - valid acc: 0.1338  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.099624 
+2022-05-20 05:46:45- epoch: 16/128 - train loss: 3.413 - train acc: 0.168 - valid loss: 3.660 - valid acc: 0.1496  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.099459 
+2022-05-20 05:47:22- epoch: 17/128 - train loss: 3.353 - train acc: 0.181 - valid loss: 3.800 - valid acc: 0.1363  
+current lr: 0.099264 
+2022-05-20 05:48:00- epoch: 18/128 - train loss: 3.297 - train acc: 0.188 - valid loss: 3.573 - valid acc: 0.1564  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.099039 
+2022-05-20 05:48:37- epoch: 19/128 - train loss: 3.216 - train acc: 0.214 - valid loss: 4.057 - valid acc: 0.1246  
+current lr: 0.098785 
+2022-05-20 05:49:14- epoch: 20/128 - train loss: 3.138 - train acc: 0.219 - valid loss: 3.481 - valid acc: 0.1722  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.098502 
+2022-05-20 05:49:52- epoch: 21/128 - train loss: 3.077 - train acc: 0.229 - valid loss: 4.051 - valid acc: 0.1415  
+current lr: 0.098189 
+2022-05-20 05:50:29- epoch: 22/128 - train loss: 3.008 - train acc: 0.239 - valid loss: 3.669 - valid acc: 0.1615  
+current lr: 0.097847 
+2022-05-20 05:51:07- epoch: 23/128 - train loss: 2.941 - train acc: 0.256 - valid loss: 4.158 - valid acc: 0.1514  
+current lr: 0.097476 
+2022-05-20 05:51:44- epoch: 24/128 - train loss: 2.883 - train acc: 0.279 - valid loss: 3.538 - valid acc: 0.1892  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.097077 
+2022-05-20 05:52:22- epoch: 25/128 - train loss: 2.824 - train acc: 0.286 - valid loss: 3.739 - valid acc: 0.1676  
+current lr: 0.096650 
+2022-05-20 05:52:59- epoch: 26/128 - train loss: 2.756 - train acc: 0.293 - valid loss: 3.283 - valid acc: 0.2185  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.096194 
+2022-05-20 05:53:37- epoch: 27/128 - train loss: 2.689 - train acc: 0.307 - valid loss: 3.191 - valid acc: 0.2370  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.095710 
+2022-05-20 05:54:14- epoch: 28/128 - train loss: 2.610 - train acc: 0.316 - valid loss: 3.220 - valid acc: 0.2354  
+current lr: 0.095199 
+2022-05-20 05:54:51- epoch: 29/128 - train loss: 2.572 - train acc: 0.324 - valid loss: 3.831 - valid acc: 0.1931  
+current lr: 0.094661 
+2022-05-20 05:55:28- epoch: 30/128 - train loss: 2.492 - train acc: 0.352 - valid loss: 3.497 - valid acc: 0.2190  
+current lr: 0.094096 
+2022-05-20 05:56:06- epoch: 31/128 - train loss: 2.456 - train acc: 0.350 - valid loss: 3.235 - valid acc: 0.2418  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.093504 
+2022-05-20 05:56:44- epoch: 32/128 - train loss: 2.394 - train acc: 0.361 - valid loss: 3.759 - valid acc: 0.2002  
+current lr: 0.092886 
+2022-05-20 05:57:21- epoch: 33/128 - train loss: 2.354 - train acc: 0.381 - valid loss: 3.096 - valid acc: 0.2670  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.092243 
+2022-05-20 05:57:59- epoch: 34/128 - train loss: 2.325 - train acc: 0.392 - valid loss: 3.418 - valid acc: 0.2342  
+current lr: 0.091573 
+2022-05-20 05:58:36- epoch: 35/128 - train loss: 2.198 - train acc: 0.419 - valid loss: 3.178 - valid acc: 0.2534  
+current lr: 0.090879 
+2022-05-20 05:59:13- epoch: 36/128 - train loss: 2.184 - train acc: 0.418 - valid loss: 3.191 - valid acc: 0.2673  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.090160 
+2022-05-20 05:59:51- epoch: 37/128 - train loss: 2.106 - train acc: 0.432 - valid loss: 3.135 - valid acc: 0.2801  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.089417 
+2022-05-20 06:00:28- epoch: 38/128 - train loss: 2.103 - train acc: 0.434 - valid loss: 3.186 - valid acc: 0.2675  
+current lr: 0.088651 
+2022-05-20 06:01:05- epoch: 39/128 - train loss: 2.047 - train acc: 0.436 - valid loss: 3.647 - valid acc: 0.2057  
+current lr: 0.087860 
+2022-05-20 06:01:43- epoch: 40/128 - train loss: 1.988 - train acc: 0.461 - valid loss: 3.029 - valid acc: 0.2901  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.087048 
+2022-05-20 06:02:20- epoch: 41/128 - train loss: 1.913 - train acc: 0.476 - valid loss: 3.284 - valid acc: 0.2927  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.086212 
+2022-05-20 06:02:58- epoch: 42/128 - train loss: 1.875 - train acc: 0.490 - valid loss: 2.923 - valid acc: 0.3291  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.085355 
+2022-05-20 06:03:36- epoch: 43/128 - train loss: 1.816 - train acc: 0.499 - valid loss: 3.306 - valid acc: 0.2708  
+current lr: 0.084477 
+2022-05-20 06:04:13- epoch: 44/128 - train loss: 1.773 - train acc: 0.513 - valid loss: 3.069 - valid acc: 0.2906  
+current lr: 0.083578 
+2022-05-20 06:04:50- epoch: 45/128 - train loss: 1.732 - train acc: 0.520 - valid loss: 2.976 - valid acc: 0.3048  
+current lr: 0.082659 
+2022-05-20 06:05:27- epoch: 46/128 - train loss: 1.661 - train acc: 0.536 - valid loss: 3.661 - valid acc: 0.2347  
+current lr: 0.081720 
+2022-05-20 06:06:05- epoch: 47/128 - train loss: 1.634 - train acc: 0.542 - valid loss: 3.104 - valid acc: 0.3136  
+current lr: 0.080762 
+2022-05-20 06:06:42- epoch: 48/128 - train loss: 1.585 - train acc: 0.549 - valid loss: 2.997 - valid acc: 0.3334  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.079785 
+2022-05-20 06:07:20- epoch: 49/128 - train loss: 1.543 - train acc: 0.570 - valid loss: 2.724 - valid acc: 0.3564  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.078790 
+2022-05-20 06:07:57- epoch: 50/128 - train loss: 1.512 - train acc: 0.572 - valid loss: 2.932 - valid acc: 0.3162  
+current lr: 0.077779 
+2022-05-20 06:08:35- epoch: 51/128 - train loss: 1.437 - train acc: 0.589 - valid loss: 2.943 - valid acc: 0.3441  
+current lr: 0.076750 
+2022-05-20 06:09:12- epoch: 52/128 - train loss: 1.384 - train acc: 0.609 - valid loss: 2.887 - valid acc: 0.3530  
+current lr: 0.075705 
+2022-05-20 06:09:49- epoch: 53/128 - train loss: 1.370 - train acc: 0.602 - valid loss: 3.049 - valid acc: 0.3188  
+current lr: 0.074645 
+2022-05-20 06:10:26- epoch: 54/128 - train loss: 1.334 - train acc: 0.616 - valid loss: 3.297 - valid acc: 0.3146  
+current lr: 0.073570 
+2022-05-20 06:11:03- epoch: 55/128 - train loss: 1.313 - train acc: 0.629 - valid loss: 3.098 - valid acc: 0.3307  
+current lr: 0.072481 
+2022-05-20 06:11:40- epoch: 56/128 - train loss: 1.246 - train acc: 0.642 - valid loss: 2.657 - valid acc: 0.3787  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.071378 
+2022-05-20 06:12:18- epoch: 57/128 - train loss: 1.161 - train acc: 0.662 - valid loss: 2.820 - valid acc: 0.3574  
+current lr: 0.070262 
+2022-05-20 06:12:55- epoch: 58/128 - train loss: 1.165 - train acc: 0.661 - valid loss: 3.445 - valid acc: 0.3160  
+current lr: 0.069134 
+2022-05-20 06:13:33- epoch: 59/128 - train loss: 1.144 - train acc: 0.676 - valid loss: 2.879 - valid acc: 0.3759  
+current lr: 0.067995 
+2022-05-20 06:14:10- epoch: 60/128 - train loss: 1.050 - train acc: 0.693 - valid loss: 3.011 - valid acc: 0.3405  
+current lr: 0.066844 
+2022-05-20 06:14:47- epoch: 61/128 - train loss: 1.031 - train acc: 0.700 - valid loss: 2.749 - valid acc: 0.3989  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.065684 
+2022-05-20 06:15:25- epoch: 62/128 - train loss: 0.995 - train acc: 0.706 - valid loss: 2.715 - valid acc: 0.3776  
+current lr: 0.064514 
+2022-05-20 06:16:02- epoch: 63/128 - train loss: 0.945 - train acc: 0.723 - valid loss: 2.674 - valid acc: 0.3871  
+current lr: 0.063336 
+2022-05-20 06:16:39- epoch: 64/128 - train loss: 0.943 - train acc: 0.726 - valid loss: 2.612 - valid acc: 0.4063  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.062149 
+2022-05-20 06:17:17- epoch: 65/128 - train loss: 0.880 - train acc: 0.741 - valid loss: 2.813 - valid acc: 0.4018  
+current lr: 0.060955 
+2022-05-20 06:17:54- epoch: 66/128 - train loss: 0.802 - train acc: 0.763 - valid loss: 2.886 - valid acc: 0.3759  
+current lr: 0.059755 
+2022-05-20 06:18:31- epoch: 67/128 - train loss: 0.802 - train acc: 0.764 - valid loss: 2.832 - valid acc: 0.3773  
+current lr: 0.058548 
+2022-05-20 06:19:09- epoch: 68/128 - train loss: 0.752 - train acc: 0.781 - valid loss: 2.611 - valid acc: 0.4166  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.057337 
+2022-05-20 06:19:46- epoch: 69/128 - train loss: 0.752 - train acc: 0.782 - valid loss: 3.769 - valid acc: 0.2858  
+current lr: 0.056121 
+2022-05-20 06:20:23- epoch: 70/128 - train loss: 0.694 - train acc: 0.793 - valid loss: 2.690 - valid acc: 0.4144  
+current lr: 0.054901 
+2022-05-20 06:21:00- epoch: 71/128 - train loss: 0.656 - train acc: 0.809 - valid loss: 2.974 - valid acc: 0.3737  
+current lr: 0.053678 
+2022-05-20 06:21:37- epoch: 72/128 - train loss: 0.653 - train acc: 0.808 - valid loss: 3.358 - valid acc: 0.3597  
+current lr: 0.052453 
+2022-05-20 06:22:15- epoch: 73/128 - train loss: 0.596 - train acc: 0.826 - valid loss: 3.070 - valid acc: 0.3592  
+current lr: 0.051227 
+2022-05-20 06:22:52- epoch: 74/128 - train loss: 0.564 - train acc: 0.836 - valid loss: 2.750 - valid acc: 0.4068  
+current lr: 0.050000 
+2022-05-20 06:23:30- epoch: 75/128 - train loss: 0.495 - train acc: 0.858 - valid loss: 2.486 - valid acc: 0.4482  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.048773 
+2022-05-20 06:24:07- epoch: 76/128 - train loss: 0.455 - train acc: 0.876 - valid loss: 2.787 - valid acc: 0.4108  
+current lr: 0.047547 
+2022-05-20 06:24:44- epoch: 77/128 - train loss: 0.422 - train acc: 0.884 - valid loss: 2.588 - valid acc: 0.4444  
+current lr: 0.046322 
+2022-05-20 06:25:22- epoch: 78/128 - train loss: 0.411 - train acc: 0.887 - valid loss: 2.745 - valid acc: 0.4253  
+current lr: 0.045099 
+2022-05-20 06:25:59- epoch: 79/128 - train loss: 0.381 - train acc: 0.903 - valid loss: 2.643 - valid acc: 0.4375  
+current lr: 0.043879 
+2022-05-20 06:26:36- epoch: 80/128 - train loss: 0.366 - train acc: 0.900 - valid loss: 2.554 - valid acc: 0.4465  
+current lr: 0.042663 
+2022-05-20 06:27:14- epoch: 81/128 - train loss: 0.298 - train acc: 0.922 - valid loss: 2.581 - valid acc: 0.4489  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.041452 
+2022-05-20 06:27:51- epoch: 82/128 - train loss: 0.294 - train acc: 0.925 - valid loss: 2.559 - valid acc: 0.4482  
+current lr: 0.040245 
+2022-05-20 06:28:29- epoch: 83/128 - train loss: 0.260 - train acc: 0.936 - valid loss: 2.494 - valid acc: 0.4525  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.039045 
+2022-05-20 06:29:06- epoch: 84/128 - train loss: 0.242 - train acc: 0.943 - valid loss: 2.659 - valid acc: 0.4417  
+current lr: 0.037851 
+2022-05-20 06:29:44- epoch: 85/128 - train loss: 0.206 - train acc: 0.957 - valid loss: 2.339 - valid acc: 0.4979  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.036664 
+2022-05-20 06:30:21- epoch: 86/128 - train loss: 0.164 - train acc: 0.970 - valid loss: 2.381 - valid acc: 0.4852  
+current lr: 0.035486 
+2022-05-20 06:30:58- epoch: 87/128 - train loss: 0.145 - train acc: 0.973 - valid loss: 2.284 - valid acc: 0.4888  
+current lr: 0.034316 
+2022-05-20 06:31:36- epoch: 88/128 - train loss: 0.138 - train acc: 0.974 - valid loss: 2.300 - valid acc: 0.5012  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.033156 
+2022-05-20 06:32:13- epoch: 89/128 - train loss: 0.121 - train acc: 0.980 - valid loss: 2.243 - valid acc: 0.5123  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.032005 
+2022-05-20 06:32:50- epoch: 90/128 - train loss: 0.110 - train acc: 0.983 - valid loss: 2.240 - valid acc: 0.5047  
+current lr: 0.030866 
+2022-05-20 06:33:28- epoch: 91/128 - train loss: 0.094 - train acc: 0.988 - valid loss: 2.186 - valid acc: 0.5159  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.029738 
+2022-05-20 06:34:05- epoch: 92/128 - train loss: 0.076 - train acc: 0.992 - valid loss: 2.224 - valid acc: 0.5040  
+current lr: 0.028622 
+2022-05-20 06:34:42- epoch: 93/128 - train loss: 0.074 - train acc: 0.993 - valid loss: 2.174 - valid acc: 0.5183  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.027519 
+2022-05-20 06:35:20- epoch: 94/128 - train loss: 0.058 - train acc: 0.995 - valid loss: 2.104 - valid acc: 0.5288  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.026430 
+2022-05-20 06:35:57- epoch: 95/128 - train loss: 0.052 - train acc: 0.996 - valid loss: 2.123 - valid acc: 0.5342  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.025355 
+2022-05-20 06:36:35- epoch: 96/128 - train loss: 0.054 - train acc: 0.997 - valid loss: 2.116 - valid acc: 0.5299  
+current lr: 0.024295 
+2022-05-20 06:37:12- epoch: 97/128 - train loss: 0.049 - train acc: 0.997 - valid loss: 2.084 - valid acc: 0.5300  
+current lr: 0.023250 
+2022-05-20 06:37:49- epoch: 98/128 - train loss: 0.040 - train acc: 0.999 - valid loss: 2.085 - valid acc: 0.5331  
+current lr: 0.022221 
+2022-05-20 06:38:27- epoch: 99/128 - train loss: 0.043 - train acc: 0.998 - valid loss: 2.059 - valid acc: 0.5397  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.021210 
+2022-05-20 06:39:04- epoch: 100/128 - train loss: 0.039 - train acc: 0.998 - valid loss: 2.061 - valid acc: 0.5349  
+current lr: 0.020215 
+2022-05-20 06:39:42- epoch: 101/128 - train loss: 0.039 - train acc: 0.998 - valid loss: 2.003 - valid acc: 0.5471  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.019238 
+2022-05-20 06:40:19- epoch: 102/128 - train loss: 0.037 - train acc: 0.999 - valid loss: 2.018 - valid acc: 0.5507  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.018280 
+2022-05-20 06:40:57- epoch: 103/128 - train loss: 0.033 - train acc: 0.999 - valid loss: 1.987 - valid acc: 0.5518  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.017341 
+2022-05-20 06:41:34- epoch: 104/128 - train loss: 0.036 - train acc: 0.999 - valid loss: 2.015 - valid acc: 0.5407  
+current lr: 0.016422 
+2022-05-20 06:42:11- epoch: 105/128 - train loss: 0.034 - train acc: 0.999 - valid loss: 1.966 - valid acc: 0.5473  
+current lr: 0.015523 
+2022-05-20 06:42:48- epoch: 106/128 - train loss: 0.033 - train acc: 1.000 - valid loss: 1.969 - valid acc: 0.5542  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.014645 
+2022-05-20 06:43:26- epoch: 107/128 - train loss: 0.032 - train acc: 0.999 - valid loss: 1.963 - valid acc: 0.5494  
+current lr: 0.013788 
+2022-05-20 06:44:03- epoch: 108/128 - train loss: 0.028 - train acc: 1.000 - valid loss: 1.973 - valid acc: 0.5478  
+current lr: 0.012952 
+2022-05-20 06:44:39- epoch: 109/128 - train loss: 0.029 - train acc: 0.999 - valid loss: 1.955 - valid acc: 0.5435  
+current lr: 0.012140 
+2022-05-20 06:45:16- epoch: 110/128 - train loss: 0.030 - train acc: 1.000 - valid loss: 1.958 - valid acc: 0.5578  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.011349 
+2022-05-20 06:45:53- epoch: 111/128 - train loss: 0.028 - train acc: 1.000 - valid loss: 1.952 - valid acc: 0.5525  
+current lr: 0.010583 
+2022-05-20 06:46:29- epoch: 112/128 - train loss: 0.027 - train acc: 0.999 - valid loss: 1.944 - valid acc: 0.5533  
+current lr: 0.009840 
+2022-05-20 06:47:06- epoch: 113/128 - train loss: 0.027 - train acc: 0.999 - valid loss: 1.926 - valid acc: 0.5578  
+current lr: 0.009121 
+2022-05-20 06:47:42- epoch: 114/128 - train loss: 0.027 - train acc: 0.999 - valid loss: 1.926 - valid acc: 0.5589  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.008427 
+2022-05-20 06:48:19- epoch: 115/128 - train loss: 0.027 - train acc: 1.000 - valid loss: 1.916 - valid acc: 0.5573  
+current lr: 0.007757 
+2022-05-20 06:48:56- epoch: 116/128 - train loss: 0.027 - train acc: 1.000 - valid loss: 1.905 - valid acc: 0.5563  
+current lr: 0.007114 
+2022-05-20 06:49:33- epoch: 117/128 - train loss: 0.026 - train acc: 1.000 - valid loss: 1.918 - valid acc: 0.5540  
+current lr: 0.006496 
+2022-05-20 06:50:09- epoch: 118/128 - train loss: 0.028 - train acc: 0.999 - valid loss: 1.918 - valid acc: 0.5589  
+current lr: 0.005904 
+2022-05-20 06:50:46- epoch: 119/128 - train loss: 0.026 - train acc: 1.000 - valid loss: 1.892 - valid acc: 0.5670  
+Best accuracy achieved, saving model to ./record/weight/05190951/resnet_downstream.pth 
+current lr: 0.005339 
+2022-05-20 06:51:23- epoch: 120/128 - train loss: 0.025 - train acc: 1.000 - valid loss: 1.910 - valid acc: 0.5620  
+current lr: 0.004801 
+2022-05-20 06:51:59- epoch: 121/128 - train loss: 0.024 - train acc: 1.000 - valid loss: 1.894 - valid acc: 0.5583  
+current lr: 0.004290 
+2022-05-20 06:52:36- epoch: 122/128 - train loss: 0.024 - train acc: 1.000 - valid loss: 1.914 - valid acc: 0.5608  
+current lr: 0.003806 
+2022-05-20 06:53:13- epoch: 123/128 - train loss: 0.023 - train acc: 1.000 - valid loss: 1.908 - valid acc: 0.5580  
+current lr: 0.003350 
+2022-05-20 06:53:49- epoch: 124/128 - train loss: 0.024 - train acc: 1.000 - valid loss: 1.905 - valid acc: 0.5571  
+current lr: 0.002923 
+2022-05-20 06:54:26- epoch: 125/128 - train loss: 0.023 - train acc: 1.000 - valid loss: 1.901 - valid acc: 0.5621  
+current lr: 0.002524 
+2022-05-20 06:55:02- epoch: 126/128 - train loss: 0.024 - train acc: 1.000 - valid loss: 1.875 - valid acc: 0.5640  
+current lr: 0.002153 
+2022-05-20 06:55:39- epoch: 127/128 - train loss: 0.024 - train acc: 1.000 - valid loss: 1.893 - valid acc: 0.5606  
+current lr: 0.001811 
+2022-05-20 06:56:16- epoch: 128/128 - train loss: 0.024 - train acc: 1.000 - valid loss: 1.895 - valid acc: 0.5606  

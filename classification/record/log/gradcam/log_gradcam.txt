@@ -1,0 +1,47 @@
+==================== Dataset Info ==================== 
+valid images: (3, 2) 
+==================== info ==================== 
+input resolution: 224 
+model load at  ['./record/weight/05201958/resnet_pretext.pth', './record/weight/05251729/resnet_pretext.pth', './record/weight/05240233/resnet_downstream.pth', './record/weight/05261448/resnet_downstream.pth'] 
+titles:  ['pretext_SimCLR', 'pretext_proposed', 'downstream_SimCLR', 'downstream_proposed'] 
+log write at  ./record/log/gradcam/log_gradcam.txt 
+gradcam save at  ./record/gradcam/ 
+cuda:0 will be used in the training process !!! 
+==================== load ==================== 
+load checkpoint from ./record/weight/05201958/resnet_pretext.pth 
+generate model: pretext model 
+Successfully load model from ./record/weight/05201958/resnet_pretext.pth 
+get target layer 
+load checkpoint from ./record/weight/05251729/resnet_pretext.pth 
+del lio module: scl_lrx.strutureg.1.weight 
+del lio module: scl_lrx.strutureg.1.bias 
+del lio module: scl_lrx.coord_predictor.predictor.0.weight 
+del lio module: scl_lrx.coord_predictor.predictor.0.bias 
+del lio module: scl_lrx.ca.conv_1x1.weight 
+del lio module: scl_lrx.ca.bn.weight 
+del lio module: scl_lrx.ca.bn.bias 
+del lio module: scl_lrx.ca.bn.running_mean 
+del lio module: scl_lrx.ca.bn.running_var 
+del lio module: scl_lrx.ca.bn.num_batches_tracked 
+del lio module: scl_lrx.ca.F_h.weight 
+del lio module: scl_lrx.ca.F_w.weight 
+del lio module: scl_lrx.cbam.channel_attention.shared_MLP.0.weight 
+del lio module: scl_lrx.cbam.channel_attention.shared_MLP.2.weight 
+del lio module: scl_lrx.cbam.spatial_attention.conv2d.weight 
+del lio module: scl_lrx.cbam.spatial_attention.conv2d.bias 
+del lio module: scl_lrx.maskg.1.weight 
+del lio module: scl_lrx.maskg.1.bias 
+generate model: pretext model 
+Successfully load model from ./record/weight/05251729/resnet_pretext.pth 
+get target layer 
+load checkpoint from ./record/weight/05240233/resnet_downstream.pth 
+generate model: downstream model 
+Successfully load model from ./record/weight/05240233/resnet_downstream.pth 
+get target layer 
+load checkpoint from ./record/weight/05261448/resnet_downstream.pth 
+generate model: downstream model 
+Successfully load model from ./record/weight/05261448/resnet_downstream.pth 
+get target layer 
+==================== CAM ==================== 
+Constructed the CAM object 
+Cam save at ./record/gradcam/ 
