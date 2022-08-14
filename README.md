@@ -12,9 +12,9 @@ such as semantic segmentation.
 ## Result
 
 
-![](../classification/record/gradcam/gradcam0.png)
-![](../classification/record/gradcam/gradcam1.png)
-![](../classification/record/gradcam/gradcam2.png)
+![](./classification/record/gradcam/gradcam0.png)
+![](./classification/record/gradcam/gradcam1.png)
+![](./classification/record/gradcam/gradcam2.png)
 
 
 ## Citation
