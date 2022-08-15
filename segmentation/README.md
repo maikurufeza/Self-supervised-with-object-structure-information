@@ -19,6 +19,9 @@ This code is tested with:
 ## Train a model
 
 
+First, Install `mmcv` and `mmsegmentation` from https://mmsegmentation.readthedocs.io/en/latest/get_started.html 
+
+
 ### Pretext task
 
 
