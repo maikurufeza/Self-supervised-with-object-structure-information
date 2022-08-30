@@ -15,6 +15,8 @@ This code is tested with:
 2. Pytorch 1.8.0+cu111
 3. mmsegmentation (https://github.com/open-mmlab/mmsegmentation)
 
+Install mmsegmentation: https://github.com/open-mmlab/mmsegmentation/blob/master/docs/zh_cn/get_started.md#installation
+
 
 ## Train a model
 
