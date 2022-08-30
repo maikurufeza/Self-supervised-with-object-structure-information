@@ -1,4 +1,4 @@
-# Self-supervised Classification with LIO
+# Self-supervised Segmentationwith LIO
 
 
 basic tutorials about the usage of this code.
