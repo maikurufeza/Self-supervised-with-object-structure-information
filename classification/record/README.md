@@ -11,7 +11,7 @@ The following shows what is stored in the folder:
 - weight: the models weight
 - log: the log files
 - mask: visualization of correlation masks
-- gradcam: gradcam for each model
+- gradcam: gradcam visualization
 
 
 ### Method of each file name
